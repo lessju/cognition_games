@@ -34,6 +34,12 @@ class CognitionGames(gui.QMainWindow):
         self._main_widget.sally_ann_select_button.setIcon(gui.QIcon('images/sally_anne_game.jpg'))
         self._main_widget.sally_ann_select_button.setIconSize(self._main_widget.sally_ann_select_button.size())
 
+        # Set pixmaps to language selection buttons
+        self._main_widget.stroop_english_button.setIcon(gui.QIcon('images/english_flag.png'))
+        self._main_widget.stroop_english_button.setIconSize(core.QSize(50, 50))
+        self._main_widget.stroop_maltese_button.setIcon(gui.QIcon('images/maltese_flag.jpg'))
+        self._main_widget.stroop_maltese_button.setIconSize(core.QSize(50, 50))
+
         # Populate Stroop game label list
         self._stroop_color_text_english = ['RED', 'BLUE', 'GREEN', 'YELLOW', 'BLACK', 'PINK', 'ORANGE', 'PURPLE']
         self._stroop_color_text_maltese = ['aħmar', 'BLU', 'AHDAR', 'ISFAR', 'ISWED', 'ROSA', 'ORANGJO', 'VJOLA']
