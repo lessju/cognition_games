@@ -1,4 +1,5 @@
-# coding=utf-8
+# -*- coding: utf-8 -*-
+
 # PyQt Stuff
 import re
 
@@ -8,6 +9,7 @@ import PyQt4.uic as uic
 
 # Python packages
 import random
+import codecs
 import sys
 
 # ------------------------- MAIN WINDOW --------------------------------
@@ -82,7 +84,7 @@ class CognitionGames(gui.QMainWindow):
 
         # Populate Stroop game label list
         self._stroop_color_text_english = ['RED', 'BLUE', 'GREEN', 'YELLOW', 'BLACK', 'PINK', 'ORANGE', 'PURPLE']
-        self._stroop_color_text_maltese = ['aħmar', 'BLU', 'AHDAR', 'ISFAR', 'ISWED', 'ROSA', 'ORANGJO', 'VJOLA']
+        self._stroop_color_text_maltese = [u'AĦMAR', u'BLU', u'AĦDAR', u'ISFAR', u'ISWED', u'ROŻA', u'ORANĠJO', u'VJOLA']
         self._stroop_color_value = [(255, 0, 0), (0, 0, 255), (0, 255, 0),
                                     (255, 255, 50), (0, 0, 0), (255, 51, 153),
                                     (255, 161, 0), (153, 0, 153)]
@@ -101,8 +103,8 @@ class CognitionGames(gui.QMainWindow):
         # Parse sally anne text files
         def process_sally_anne_text_file(filepath):
             result = {}
-            with open(filepath, 'r') as f:
-                text = f.read()
+            with codecs.open(filepath, 'r', 'utf-8') as f:
+                text = f.read().replace('\r', '')
                 # Find all positions of '['
                 pos = [pos for pos, char in enumerate(text) if char == '[']
 
@@ -228,9 +230,9 @@ class CognitionGames(gui.QMainWindow):
         """ Populate Sally Anne Game UI in either maltese or english """
 
         if self._maltese:
-            self._main_widget.sally_anne_instructions_label.setText(self._sally_anne_maltese_text["instructions"])
-            self._main_widget.start_sally_anne_button.setText("Ibda")
-            self._main_widget.sally_anne_next_button.setText("Li jmiss")
+            self._main_widget.sally_anne_instructions_label.setText(unicode(self._sally_anne_maltese_text["instructions"]))
+            self._main_widget.start_sally_anne_button.setText(unicode("Ibda"))
+            self._main_widget.sally_anne_next_button.setText(unicode("Li jmiss"))
         else:
             self._main_widget.sally_anne_instructions_label.setText(self._sally_anne_english_text["instructions"])
             self._main_widget.start_sally_anne_button.setText("Start")
@@ -258,8 +260,8 @@ class CognitionGames(gui.QMainWindow):
             return self.sally_anne_move_slide()
 
         if self._maltese:
-            self._main_widget.sally_anne_instructions_label.setText(self._sally_anne_maltese_text["sally_anne_0"])
-            self._main_widget.start_sally_anne_button.setText("Li jmiss")
+            self._main_widget.sally_anne_instructions_label.setText(unicode(self._sally_anne_maltese_text["sally_anne_0"]))
+            self._main_widget.start_sally_anne_button.setText(unicode("Li jmiss"))
         else:
             self._main_widget.sally_anne_instructions_label.setText(self._sally_anne_english_text["sally_anne_0"])
             self._main_widget.start_sally_anne_button.setText("Next")
@@ -280,7 +282,7 @@ class CognitionGames(gui.QMainWindow):
                 pixmap = pixmap.scaled(x, y, core.Qt.KeepAspectRatio)
                 self._main_widget.sally_anne_image_placeholder.setPixmap(pixmap)
                 self._main_widget.sally_anne_image_caption.setText(
-                    self._sally_anne_maltese_text["sally_anne_%d" % self._sally_anne_page_index])
+                    self._sally_anne_maltese_text[unicode("sally_anne_%d" % self._sally_anne_page_index)])
             else:
                 pixmap = gui.QPixmap('images/sally_anne_english/sally_anne_%d.jpg' %
                                      self._sally_anne_page_index)
@@ -297,7 +299,7 @@ class CognitionGames(gui.QMainWindow):
         """ Sally Anne question page """
         self._main_widget.sally_anne_stacked_widget.setCurrentIndex(2)
         if self._maltese:
-            self._main_widget.sally_anne_question.setText(self._sally_anne_maltese_text['question'])
+            self._main_widget.sally_anne_question.setText(unicode(self._sally_anne_maltese_text['question']))
         else:
             self._main_widget.sally_anne_question.setText(self._sally_anne_english_text['question'])
 

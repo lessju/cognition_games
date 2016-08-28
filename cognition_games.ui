@@ -23,11 +23,20 @@
    <item row="0" column="0">
     <widget class="QStackedWidget" name="main_stacked_widget">
      <property name="currentIndex">
-      <number>3</number>
+      <number>0</number>
      </property>
      <widget class="QWidget" name="main_frame">
       <layout class="QGridLayout" name="gridLayout_2" rowstretch="0,0" columnstretch="0">
-       <property name="margin">
+       <property name="leftMargin">
+        <number>1</number>
+       </property>
+       <property name="topMargin">
+        <number>1</number>
+       </property>
+       <property name="rightMargin">
+        <number>1</number>
+       </property>
+       <property name="bottomMargin">
         <number>1</number>
        </property>
        <item row="1" column="0">
@@ -36,6 +45,7 @@
           <widget class="QLabel" name="label">
            <property name="font">
             <font>
+             <family>Amble</family>
              <pointsize>50</pointsize>
              <weight>75</weight>
              <bold>true</bold>
@@ -85,6 +95,7 @@ padding: 0px;</string>
             <widget class="QLabel" name="label_5">
              <property name="font">
               <font>
+               <family>Amble</family>
                <pointsize>25</pointsize>
               </font>
              </property>
@@ -131,6 +142,7 @@ padding: 0px;</string>
             <widget class="QLabel" name="label_6">
              <property name="font">
               <font>
+               <family>Amble</family>
                <pointsize>25</pointsize>
               </font>
              </property>
@@ -190,6 +202,7 @@ padding: 0px;</string>
             <widget class="QLabel" name="label_7">
              <property name="font">
               <font>
+               <family>Amble</family>
                <pointsize>25</pointsize>
               </font>
              </property>
@@ -223,6 +236,7 @@ padding: 0px;</string>
             <widget class="QLabel" name="label_2">
              <property name="font">
               <font>
+               <family>Amble</family>
                <pointsize>50</pointsize>
               </font>
              </property>
@@ -256,6 +270,7 @@ padding: 0px;</string>
              </property>
              <property name="font">
               <font>
+               <family>Amble</family>
                <pointsize>20</pointsize>
                <weight>75</weight>
                <bold>true</bold>
@@ -298,6 +313,7 @@ padding: 0px;</string>
              </property>
              <property name="font">
               <font>
+               <family>Amble</family>
                <pointsize>20</pointsize>
                <weight>75</weight>
                <bold>true</bold>
@@ -324,6 +340,7 @@ padding: 0px;</string>
              </property>
              <property name="font">
               <font>
+               <family>Amble</family>
                <pointsize>18</pointsize>
               </font>
              </property>
@@ -363,6 +380,7 @@ padding: 0px;</string>
              </property>
              <property name="font">
               <font>
+               <family>Amble</family>
                <pointsize>20</pointsize>
                <weight>75</weight>
                <bold>true</bold>
@@ -415,7 +433,7 @@ padding: 0px;</string>
                  </property>
                  <property name="font">
                   <font>
-                   <family>Ubuntu</family>
+                   <family>Amble</family>
                    <pointsize>36</pointsize>
                    <weight>50</weight>
                    <italic>false</italic>
@@ -449,7 +467,7 @@ padding: 0px;</string>
                  </property>
                  <property name="font">
                   <font>
-                   <family>Ubuntu</family>
+                   <family>Amble</family>
                    <pointsize>36</pointsize>
                    <weight>50</weight>
                    <italic>false</italic>
@@ -483,7 +501,7 @@ padding: 0px;</string>
                  </property>
                  <property name="font">
                   <font>
-                   <family>Ubuntu</family>
+                   <family>Amble</family>
                    <pointsize>36</pointsize>
                    <weight>50</weight>
                    <italic>false</italic>
@@ -517,7 +535,7 @@ padding: 0px;</string>
                  </property>
                  <property name="font">
                   <font>
-                   <family>Ubuntu</family>
+                   <family>Amble</family>
                    <pointsize>36</pointsize>
                    <weight>50</weight>
                    <italic>false</italic>
@@ -551,7 +569,7 @@ padding: 0px;</string>
                  </property>
                  <property name="font">
                   <font>
-                   <family>Ubuntu</family>
+                   <family>Amble</family>
                    <pointsize>36</pointsize>
                    <weight>50</weight>
                    <italic>false</italic>
@@ -585,7 +603,7 @@ padding: 0px;</string>
                  </property>
                  <property name="font">
                   <font>
-                   <family>Ubuntu</family>
+                   <family>Amble</family>
                    <pointsize>36</pointsize>
                    <weight>50</weight>
                    <italic>false</italic>
@@ -619,7 +637,7 @@ padding: 0px;</string>
                  </property>
                  <property name="font">
                   <font>
-                   <family>Ubuntu</family>
+                   <family>Amble</family>
                    <pointsize>36</pointsize>
                    <weight>50</weight>
                    <italic>false</italic>
@@ -653,7 +671,7 @@ padding: 0px;</string>
                  </property>
                  <property name="font">
                   <font>
-                   <family>Ubuntu</family>
+                   <family>Amble</family>
                    <pointsize>36</pointsize>
                    <weight>50</weight>
                    <italic>false</italic>
@@ -687,7 +705,7 @@ padding: 0px;</string>
                  </property>
                  <property name="font">
                   <font>
-                   <family>Ubuntu</family>
+                   <family>Amble</family>
                    <pointsize>36</pointsize>
                    <weight>50</weight>
                    <italic>false</italic>
@@ -721,7 +739,7 @@ padding: 0px;</string>
                  </property>
                  <property name="font">
                   <font>
-                   <family>Ubuntu</family>
+                   <family>Amble</family>
                    <pointsize>36</pointsize>
                    <weight>50</weight>
                    <italic>false</italic>
@@ -755,7 +773,7 @@ padding: 0px;</string>
                  </property>
                  <property name="font">
                   <font>
-                   <family>Ubuntu</family>
+                   <family>Amble</family>
                    <pointsize>36</pointsize>
                    <weight>50</weight>
                    <italic>false</italic>
@@ -789,7 +807,7 @@ padding: 0px;</string>
                  </property>
                  <property name="font">
                   <font>
-                   <family>Ubuntu</family>
+                   <family>Amble</family>
                    <pointsize>36</pointsize>
                    <weight>50</weight>
                    <italic>false</italic>
@@ -823,7 +841,7 @@ padding: 0px;</string>
                  </property>
                  <property name="font">
                   <font>
-                   <family>Ubuntu</family>
+                   <family>Amble</family>
                    <pointsize>36</pointsize>
                    <weight>50</weight>
                    <italic>false</italic>
@@ -857,7 +875,7 @@ padding: 0px;</string>
                  </property>
                  <property name="font">
                   <font>
-                   <family>Ubuntu</family>
+                   <family>Amble</family>
                    <pointsize>36</pointsize>
                    <weight>50</weight>
                    <italic>false</italic>
@@ -891,7 +909,7 @@ padding: 0px;</string>
                  </property>
                  <property name="font">
                   <font>
-                   <family>Ubuntu</family>
+                   <family>Amble</family>
                    <pointsize>36</pointsize>
                    <weight>50</weight>
                    <italic>false</italic>
@@ -925,7 +943,7 @@ padding: 0px;</string>
                  </property>
                  <property name="font">
                   <font>
-                   <family>Ubuntu</family>
+                   <family>Amble</family>
                    <pointsize>36</pointsize>
                    <weight>50</weight>
                    <italic>false</italic>
@@ -959,7 +977,7 @@ padding: 0px;</string>
                  </property>
                  <property name="font">
                   <font>
-                   <family>Ubuntu</family>
+                   <family>Amble</family>
                    <pointsize>36</pointsize>
                    <weight>50</weight>
                    <italic>false</italic>
@@ -993,7 +1011,7 @@ padding: 0px;</string>
                  </property>
                  <property name="font">
                   <font>
-                   <family>Ubuntu</family>
+                   <family>Amble</family>
                    <pointsize>36</pointsize>
                    <weight>50</weight>
                    <italic>false</italic>
@@ -1027,7 +1045,7 @@ padding: 0px;</string>
                  </property>
                  <property name="font">
                   <font>
-                   <family>Ubuntu</family>
+                   <family>Amble</family>
                    <pointsize>36</pointsize>
                    <weight>50</weight>
                    <italic>false</italic>
@@ -1061,7 +1079,7 @@ padding: 0px;</string>
                  </property>
                  <property name="font">
                   <font>
-                   <family>Ubuntu</family>
+                   <family>Amble</family>
                    <pointsize>36</pointsize>
                    <weight>50</weight>
                    <italic>false</italic>
@@ -1095,7 +1113,7 @@ padding: 0px;</string>
                  </property>
                  <property name="font">
                   <font>
-                   <family>Ubuntu</family>
+                   <family>Amble</family>
                    <pointsize>36</pointsize>
                    <weight>50</weight>
                    <italic>false</italic>
@@ -1129,7 +1147,7 @@ padding: 0px;</string>
                  </property>
                  <property name="font">
                   <font>
-                   <family>Ubuntu</family>
+                   <family>Amble</family>
                    <pointsize>36</pointsize>
                    <weight>50</weight>
                    <italic>false</italic>
@@ -1163,7 +1181,7 @@ padding: 0px;</string>
                  </property>
                  <property name="font">
                   <font>
-                   <family>Ubuntu</family>
+                   <family>Amble</family>
                    <pointsize>36</pointsize>
                    <weight>50</weight>
                    <italic>false</italic>
@@ -1197,7 +1215,7 @@ padding: 0px;</string>
                  </property>
                  <property name="font">
                   <font>
-                   <family>Ubuntu</family>
+                   <family>Amble</family>
                    <pointsize>36</pointsize>
                    <weight>50</weight>
                    <italic>false</italic>
@@ -1231,7 +1249,7 @@ padding: 0px;</string>
                  </property>
                  <property name="font">
                   <font>
-                   <family>Ubuntu</family>
+                   <family>Amble</family>
                    <pointsize>36</pointsize>
                    <weight>50</weight>
                    <italic>false</italic>
@@ -1286,6 +1304,7 @@ padding: 0px;</string>
                </property>
                <property name="font">
                 <font>
+                 <family>Amble</family>
                  <pointsize>20</pointsize>
                  <weight>75</weight>
                  <bold>true</bold>
@@ -1312,6 +1331,7 @@ padding: 0px;</string>
             <widget class="QLabel" name="label10">
              <property name="font">
               <font>
+               <family>Amble</family>
                <pointsize>50</pointsize>
               </font>
              </property>
@@ -1345,11 +1365,12 @@ padding: 0px;</string>
              </property>
              <property name="font">
               <font>
+               <family>Amble</family>
                <pointsize>16</pointsize>
               </font>
              </property>
              <property name="text">
-              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-family:'helvetica,arial,sans-serif'; font-size:14pt; color:#4b4f56;&quot;&gt;The famous &amp;quot;Stroop Effect&amp;quot; is named after J. Ridley Stroop who discovered this strange phenomenon in the 1930s. Stroop compared the naming of colors for a list of solid color squares with the naming of colors for a list of words printed in mismatching colors. Subjects averaged 74% longer to name ink colors of mismatching words.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-family:'helvetica,arial,sans-serif'; font-size:14pt; color:#4b4f56;&quot;&gt;Therefore words have a strong influence over your ability to say the color. The interference between the different information (what the words say and the color of the words) your brain receives causes a problem. &lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-family:'helvetica,arial,sans-serif'; font-size:14pt; color:#4b4f56;&quot;&gt;These are some of the main theories that may explain the Stroop effect:&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-family:'helvetica,arial,sans-serif'; font-size:14pt; color:#4b4f56;&quot;&gt;1. Speed of Processing Theory: the interference occurs because words are read faster than colors are named. Therefore word processing is much faster than color processing. &lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-family:'helvetica,arial,sans-serif'; font-size:14pt; color:#4b4f56;&quot;&gt;2. Automaticity Model: Since the original study, the Stroop effect has been investigated in a variety of ways. One general finding is that the Stroop effect is very robust. For example, the Stroop effect extends to color-related words (e.g. sky and fire). It extends to non-words that sound like color words (e.g. wred and bloo). It even occurs when the words are presented not in the best of conditions (dim, faded, small, etc.). It is resistant to practice. This has led some researchers to believe that reading is an automatic process, which cannot be turned off. So, we see the meaning of words without much effort or consciousness. On the other hand, naming colors is not automatic. It requires more effort than reading.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-family:'helvetica,arial,sans-serif'; font-size:14pt; color:#4b4f56;&quot;&gt;3. Parallel Distributed Processing Model: Different tasks develop different processing pathways, and due to practice and our biology, different pathways have different strengths. How automatic a task is depends on the strength of each pathway. So if two pathways are active at the same time and the pathway that leads to the response is stronger (naming words), no interference occurs. However, if two pathways are active together and the pathway that leads to the response is weaker (naming the color of the word), there is interference.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-family:'amble'; font-size:14pt; color:#4b4f56;&quot;&gt;The famous &amp;quot;Stroop Effect&amp;quot; is named after J. Ridley Stroop who discovered this strange phenomenon in the 1930s. Stroop compared the naming of colors for a list of solid color squares with the naming of colors for a list of words printed in mismatching colors. Subjects averaged 74% longer to name ink colors of mismatching words.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-family:'amble'; font-size:14pt; color:#4b4f56;&quot;&gt;Therefore words have a strong influence over your ability to say the color. The interference between the different information (what the words say and the color of the words) your brain receives causes a problem. &lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-family:'amble'; font-size:14pt; color:#4b4f56;&quot;&gt;These are some of the main theories that may explain the Stroop effect:&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-family:'amble'; font-size:14pt; color:#4b4f56;&quot;&gt;1. Speed of Processing Theory: the interference occurs because words are read faster than colors are named. Therefore word processing is much faster than color processing. &lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-family:'amble'; font-size:14pt; color:#4b4f56;&quot;&gt;2. Automaticity Model: Since the original study, the Stroop effect has been investigated in a variety of ways. One general finding is that the Stroop effect is very robust. For example, the Stroop effect extends to color-related words (e.g. sky and fire). It extends to non-words that sound like color words (e.g. wred and bloo). It even occurs when the words are presented not in the best of conditions (dim, faded, small, etc.). It is resistant to practice. This has led some researchers to believe that reading is an automatic process, which cannot be turned off. So, we see the meaning of words without much effort or consciousness. On the other hand, naming colors is not automatic. It requires more effort than reading.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-family:'amble'; font-size:14pt; color:#4b4f56;&quot;&gt;3. Parallel Distributed Processing Model: Different tasks develop different processing pathways, and due to practice and our biology, different pathways have different strengths. How automatic a task is depends on the strength of each pathway. So if two pathways are active at the same time and the pathway that leads to the response is stronger (naming words), no interference occurs. However, if two pathways are active together and the pathway that leads to the response is weaker (naming the color of the word), there is interference.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
              </property>
              <property name="textFormat">
               <enum>Qt::AutoText</enum>
@@ -1390,6 +1411,7 @@ padding: 0px;</string>
              </property>
              <property name="font">
               <font>
+               <family>Amble</family>
                <pointsize>20</pointsize>
                <weight>75</weight>
                <bold>true</bold>
@@ -1430,6 +1452,7 @@ padding: 0px;</string>
           <widget class="QLabel" name="label_3">
            <property name="font">
             <font>
+             <family>Amble</family>
              <pointsize>50</pointsize>
             </font>
            </property>
@@ -1450,7 +1473,7 @@ padding: 0px;</string>
        <item row="0" column="0">
         <widget class="QStackedWidget" name="sally_anne_stacked_widget">
          <property name="currentIndex">
-          <number>2</number>
+          <number>0</number>
          </property>
          <widget class="QWidget" name="sally_anne_instructions">
           <layout class="QGridLayout" name="sally_anne_grid" rowstretch="1,2,1,0" columnstretch="0,0,0">
@@ -1461,6 +1484,7 @@ padding: 0px;</string>
             <widget class="QLabel" name="label_10">
              <property name="font">
               <font>
+               <family>Amble</family>
                <pointsize>50</pointsize>
               </font>
              </property>
@@ -1494,6 +1518,7 @@ padding: 0px;</string>
              </property>
              <property name="font">
               <font>
+               <family>Amble</family>
                <pointsize>20</pointsize>
                <weight>75</weight>
                <bold>true</bold>
@@ -1536,6 +1561,7 @@ padding: 0px;</string>
              </property>
              <property name="font">
               <font>
+               <family>Amble</family>
                <pointsize>20</pointsize>
                <weight>75</weight>
                <bold>true</bold>
@@ -1562,6 +1588,7 @@ padding: 0px;</string>
              </property>
              <property name="font">
               <font>
+               <family>Amble</family>
                <pointsize>18</pointsize>
               </font>
              </property>
@@ -1601,6 +1628,7 @@ padding: 0px;</string>
              </property>
              <property name="font">
               <font>
+               <family>Amble</family>
                <pointsize>20</pointsize>
                <weight>75</weight>
                <bold>true</bold>
@@ -1629,6 +1657,7 @@ padding: 0px;</string>
             <widget class="QLabel" name="sally_anne_image_caption">
              <property name="font">
               <font>
+               <family>Amble</family>
                <pointsize>20</pointsize>
                <weight>75</weight>
                <bold>true</bold>
@@ -1664,6 +1693,7 @@ padding: 0px;</string>
              </property>
              <property name="font">
               <font>
+               <family>Amble</family>
                <pointsize>20</pointsize>
                <weight>75</weight>
                <bold>true</bold>
@@ -1685,6 +1715,7 @@ padding: 0px;</string>
             <widget class="QLabel" name="sally_anne_question">
              <property name="font">
               <font>
+               <family>Amble</family>
                <pointsize>20</pointsize>
                <weight>75</weight>
                <bold>true</bold>
