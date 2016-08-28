@@ -1,0 +1,20 @@
+[instructions]
+In this game you will see some words displayed on the screen. The aim of the game is to say out loud the color of the words you see. Do not read what the words say. For example, for the word, RED, you should say 'Blue'. As soon as the words appear on the screen, say the
+list of words as fast as you can. 
+
+When you have finished, click on the 'Finish' button. The time it took you to read all of the words will be shown.
+
+Press 'Start' to start the game
+
+[explanation]
+The famous "Stroop Effect" is named after J. Ridley Stroop who discovered this strange phenomenon in the 1930s. Stroop compared the naming of colors for a list of solid color squares with the naming of colors for a list of words printed in mismatching colors. Subjects averaged 74% longer to name ink colors of mismatching words.
+
+Therefore words have a strong influence over your ability to say the color. The interference between the different information (what the words say and the color of the words) your brain receives causes a problem. 
+
+These are some of the main theories that may explain the Stroop effect:
+
+1. Speed of Processing Theory: the interference occurs because words are read faster than colors are named. Therefore word processing is much faster than color processing. 
+
+2. Automaticity Model: Since the original study, the Stroop effect has been investigated in a variety of ways. One general finding is that the Stroop effect is very robust. For example, the Stroop effect extends to color-related words (e.g. sky and fire). It extends to non-words that sound like color words (e.g. wred and bloo). It even occurs when the words are presented not in the best of conditions (dim, faded, small, etc.). It is resistant to practice. This has led some researchers to believe that reading is an automatic process, which cannot be turned off. So, we see the meaning of words without much effort or consciousness. On the other hand, naming colors is not automatic. It requires more effort than reading.
+
+3. Parallel Distributed Processing Model: Different tasks develop different processing pathways, and due to practice and our biology, different pathways have different strengths. How automatic a task is depends on the strength of each pathway. So if two pathways are active at the same time and the pathway that leads to the response is stronger (naming words), no interference occurs. However, if two pathways are active together and the pathway that leads to the response is weaker (naming the color of the word), there is interference.

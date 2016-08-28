@@ -101,7 +101,7 @@ class CognitionGames(gui.QMainWindow):
                 self._sally_anne_image_dimensions[vals[0]] = (vals[1], vals[2])
 
         # Parse sally anne text files
-        def process_sally_anne_text_file(filepath):
+        def process_text_file(filepath):
             result = {}
             with codecs.open(filepath, 'r', 'utf-8') as f:
                 text = f.read().replace('\r', '')
@@ -121,8 +121,10 @@ class CognitionGames(gui.QMainWindow):
                     result[key[1:-1]] = value
             return result
 
-        self._sally_anne_english_text = process_sally_anne_text_file("text/sally_anne_english.txt")
-        self._sally_anne_maltese_text = process_sally_anne_text_file("text/sally_anne_maltese.txt")
+        self._sally_anne_english_text = process_text_file("text/sally_anne_english.txt")
+        self._sally_anne_maltese_text = process_text_file("text/sally_anne_maltese.txt")
+        self._stroop_english_text = process_text_file("text/stroop_english.txt")
+        self._stroop_maltese_text = process_text_file("text/stroop_maltese.txt")
 
         # Define require variables
         self._sally_anne_answer = 1
@@ -143,21 +145,17 @@ class CognitionGames(gui.QMainWindow):
         """ Populate Stroop Game UI in either maltese or english """
 
         if self._maltese:
-            self._main_widget.stroop_instructions_label.setText("Suppost din tkun bil-Malti")
+            self._main_widget.stroop_instructions_label.setText(self._stroop_maltese_text['instructions'])
             self._main_widget.start_stroop_button.setText("Ibda")
-            self._main_widget.stroop_play_again_button.setText("Erga Ilghab")
+            self._main_widget.stroop_play_again_button.setText(u"Erga Ilgħab")
             self._main_widget.ready_stroop_game_button.setText("Lest")
+            self._main_widget.stroop_explanation_label.setText(self._stroop_maltese_text['explanation'])
         else:
-            self._main_widget.stroop_instructions_label.setText("""<html><head/><body><p>
-            In this game you will see some words displayed on the screen. The aim of the
-            game is to say out loud the color of the words you see. Do not read what the words say. For example, for the
-            word, RED, you should say &quot;Blue.&quot;</p><p><br/></p><p>As soon as the words appear on the screen, say the
-            list of words as fast as you can. When you have finished, click on the &quot;Finish&quot; button. The time it
-            took you to read all of the words will be shown.</p><p><br/></p><p>Press &quot;Start&quot; to start the game
-            </p></body></html> """)
+            self._main_widget.stroop_instructions_label.setText(self._stroop_english_text['instructions'])
             self._main_widget.start_stroop_button.setText("Start")
             self._main_widget.stroop_play_again_button.setText("Play Again")
             self._main_widget.ready_stroop_game_button.setText("Ready")
+            self._main_widget.stroop_explanation_label.setText(self._stroop_english_text['explanation'])
 
         self._main_widget.stroop_english_button.setVisible(False)
         self._main_widget.stroop_maltese_button.setVisible(False)
