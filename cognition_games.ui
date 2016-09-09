@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1332</width>
+    <width>1432</width>
     <height>726</height>
    </rect>
   </property>
@@ -19,6 +19,9 @@
   <property name="autoFillBackground">
    <bool>false</bool>
   </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
   <layout class="QGridLayout" name="gridLayout">
    <item row="0" column="0">
     <widget class="QStackedWidget" name="main_stacked_widget">
@@ -27,16 +30,7 @@
      </property>
      <widget class="QWidget" name="main_frame">
       <layout class="QGridLayout" name="gridLayout_2" rowstretch="0,0" columnstretch="0">
-       <property name="leftMargin">
-        <number>1</number>
-       </property>
-       <property name="topMargin">
-        <number>1</number>
-       </property>
-       <property name="rightMargin">
-        <number>1</number>
-       </property>
-       <property name="bottomMargin">
+       <property name="margin">
         <number>1</number>
        </property>
        <item row="1" column="0">

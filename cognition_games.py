@@ -51,7 +51,7 @@ class CognitionGames(gui.QMainWindow):
         core.QObject.connect(self._main_widget.stroop_select_button, core.SIGNAL('clicked()'), self.select_stroop)
         core.QObject.connect(self._main_widget.start_stroop_button, core.SIGNAL('clicked()'), self.start_stroop_game)
         core.QObject.connect(self._main_widget.ready_stroop_game_button, core.SIGNAL('clicked()'),  #
-                             self.ready_stroop_game)
+                             self.start_stroop_game)
         core.QObject.connect(self._main_widget.stroop_play_again_button, core.SIGNAL('clicked()'), self.select_stroop)
         core.QObject.connect(self._main_widget.stroop_english_button, core.SIGNAL('clicked()'), self.set_stroop_english)
         core.QObject.connect(self._main_widget.stroop_maltese_button, core.SIGNAL('clicked()'), self.set_stroop_maltese)
@@ -92,6 +92,7 @@ class CognitionGames(gui.QMainWindow):
         self._stroop_label_list = []
         for i in range(1, 26):
             self._stroop_label_list.append(getattr(self._main_widget, "stroop_text_%d" % i))
+        self._stroop_index = 0
 
         # Populate sally anne image dimensions from file
         self._sally_anne_image_dimensions = {}
@@ -174,13 +175,17 @@ class CognitionGames(gui.QMainWindow):
     def start_stroop_game(self):
         """ Start Stroop Game """
 
+        if 0 < self._stroop_index < 3:
+            self.ready_stroop_game()
+
         # Create randmoised text
         for label in self._stroop_label_list:
             # Generate random indices
             text = random.randint(0, 7)
             color = text
-            while color == text:
-                color = random.randint(0, 7)
+            if self._stroop_index != 0:
+                while color == text:
+                    color = random.randint(0, 7)
 
             if self._maltese:
                 label.setText('%s' % self._stroop_color_text_maltese[text])
@@ -195,6 +200,12 @@ class CognitionGames(gui.QMainWindow):
         if self._main_widget.main_stacked_widget.currentIndex() == 1:
             self._main_widget.stroop_stacked_widget.setCurrentIndex(1)
 
+        self._stroop_index += 1
+
+        if self._stroop_index == 3:
+            self._stroop_index = 0
+            self._main_widget.stroop_stacked_widget.setCurrentIndex(2)
+
     def ready_stroop_game(self):
         """ Ready from stroop game """
 
@@ -206,9 +217,6 @@ class CognitionGames(gui.QMainWindow):
         msg.setWindowTitle("Stroop Game")
         msg.setStandardButtons(gui.QMessageBox.Ok)
         msg.exec_()
-
-        # Switch to explanation page
-        self._main_widget.stroop_stacked_widget.setCurrentIndex(2)
 
     # ------------------------------------------- Wug functions -------------------------------------------
     def select_wug(self):
