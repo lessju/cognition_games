@@ -74,6 +74,8 @@ class CognitionGames(gui.QMainWindow):
                              self.sally_anne_answer_1_pressed)
         core.QObject.connect(self._main_widget.sally_anne_answer_2_button, core.SIGNAL('clicked()'),
                              self.sally_anne_answer_2_pressed)
+        core.QObject.connect(self._main_widget.sally_anne_play_again_button, core.SIGNAL('clicked()'),
+                             self.sally_anne_final_page)
 
         # Set current stacked widgets index
         self._main_widget.main_stacked_widget.setCurrentIndex(0)
@@ -84,7 +86,8 @@ class CognitionGames(gui.QMainWindow):
 
         # Populate Stroop game label list
         self._stroop_color_text_english = ['RED', 'BLUE', 'GREEN', 'YELLOW', 'BLACK', 'PINK', 'ORANGE', 'PURPLE']
-        self._stroop_color_text_maltese = [u'AĦMAR', u'BLU', u'AĦDAR', u'ISFAR', u'ISWED', u'ROŻA', u'ORANĠJO', u'VJOLA']
+        self._stroop_color_text_maltese = [u'AĦMAR', u'BLU', u'AĦDAR', u'ISFAR', u'ISWED', u'ROŻA', u'ORANĠJO',
+                                           u'VJOLA']
         self._stroop_color_value = [(255, 0, 0), (0, 0, 255), (0, 255, 0),
                                     (255, 255, 50), (0, 0, 0), (255, 51, 153),
                                     (255, 161, 0), (153, 0, 153)]
@@ -236,13 +239,20 @@ class CognitionGames(gui.QMainWindow):
         """ Populate Sally Anne Game UI in either maltese or english """
 
         if self._maltese:
-            self._main_widget.sally_anne_instructions_label.setText(unicode(self._sally_anne_maltese_text["instructions"]))
+            self._main_widget.sally_anne_instructions_label.setText(
+                unicode(self._sally_anne_maltese_text["instructions"]))
+            self._main_widget.sally_anne_explanation_label.setText(
+                unicode(self._sally_anne_maltese_text["story"]))
             self._main_widget.start_sally_anne_button.setText(unicode("Ibda"))
             self._main_widget.sally_anne_next_button.setText(unicode("Li jmiss"))
+            self._main_widget.sally_anne_play_again_button.setText(unicode("Li jmiss"))
         else:
             self._main_widget.sally_anne_instructions_label.setText(self._sally_anne_english_text["instructions"])
+            self._main_widget.sally_anne_explanation_label.setText(
+                unicode(self._sally_anne_english_text["story"]))
             self._main_widget.start_sally_anne_button.setText("Start")
             self._main_widget.sally_anne_next_button.setText("Next")
+            self._main_widget.sally_anne_play_again_button.setText(unicode("Next"))
 
         self._main_widget.sally_anne_english_button.setVisible(False)
         self._main_widget.sally_anne_maltese_button.setVisible(False)
@@ -266,7 +276,8 @@ class CognitionGames(gui.QMainWindow):
             return self.sally_anne_move_slide()
 
         if self._maltese:
-            self._main_widget.sally_anne_instructions_label.setText(unicode(self._sally_anne_maltese_text["sally_anne_0"]))
+            self._main_widget.sally_anne_instructions_label.setText(
+                unicode(self._sally_anne_maltese_text["sally_anne_0"]))
             self._main_widget.start_sally_anne_button.setText(unicode("Li jmiss"))
         else:
             self._main_widget.sally_anne_instructions_label.setText(self._sally_anne_english_text["sally_anne_0"])
@@ -343,9 +354,35 @@ class CognitionGames(gui.QMainWindow):
         msg.setStandardButtons(gui.QMessageBox.Ok)
         msg.exec_()
 
+        # Switch to next page
+        self._sally_anne_page_index = 0
+        self._main_widget.sally_anne_stacked_widget.setCurrentIndex(3)
+
+    def sally_anne_final_page(self):
+        """ Final page of sally anne game """
+        if self._sally_anne_page_index == 0:
+            if self._maltese:
+                self._main_widget.sally_anne_play_again_button.setText(u"Erga Ilgħab")
+                self._main_widget.sally_anne_explanation_label.setText(
+                    unicode(self._sally_anne_maltese_text["explanation"]))
+            else:
+                self._main_widget.sally_anne_play_again_button.setText("Play Again")
+                self._main_widget.sally_anne_explanation_label.setText(
+                    unicode(self._sally_anne_english_text["explanation"]))
+            self._sally_anne_page_index = 1
+        else:
+            self._main_widget.sally_anne_stacked_widget.setCurrentIndex(0)
+            self._main_widget.sally_anne_english_button.setVisible(True)
+            self._main_widget.sally_anne_maltese_button.setVisible(True)
+            self._main_widget.sally_anne_instructions_label.setVisible(False)
+            self._main_widget.start_sally_anne_button.setVisible(False)
+            self._sally_anne_page_index = 0
+
+
 # Application entry point
 if __name__ == "__main__":
     app = gui.QApplication(sys.argv)
     app.setApplicationName("Cognition Games")
+    app.setWindowIcon(gui.QIcon('cognition_games.jpg'))
     plotter = CognitionGames("cognition_games.ui")
     sys.exit(app.exec_())

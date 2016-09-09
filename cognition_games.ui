@@ -34,7 +34,7 @@
         <number>1</number>
        </property>
        <item row="1" column="0">
-        <layout class="QGridLayout" name="main_frame_grid" rowstretch="1,1,1,0" columnstretch="1,1,1">
+        <layout class="QGridLayout" name="main_frame_grid" rowstretch="5,5,5,1" columnstretch="1,1,1">
          <item row="0" column="0" colspan="3">
           <widget class="QLabel" name="label">
            <property name="font">
@@ -57,8 +57,8 @@
           </widget>
          </item>
          <item row="1" column="0">
-          <layout class="QVBoxLayout" name="verticalLayout">
-           <item alignment="Qt::AlignHCenter">
+          <layout class="QGridLayout" name="gridLayout_10">
+           <item row="0" column="0">
             <widget class="QPushButton" name="stroop_select_button">
              <property name="sizePolicy">
               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
@@ -85,7 +85,7 @@ padding: 0px;</string>
              </property>
             </widget>
            </item>
-           <item alignment="Qt::AlignHCenter">
+           <item row="1" column="0">
             <widget class="QLabel" name="label_5">
              <property name="font">
               <font>
@@ -104,8 +104,8 @@ padding: 0px;</string>
           </layout>
          </item>
          <item row="1" column="1">
-          <layout class="QVBoxLayout" name="verticalLayout_2">
-           <item alignment="Qt::AlignHCenter">
+          <layout class="QGridLayout" name="gridLayout_11">
+           <item row="0" column="0">
             <widget class="QPushButton" name="wug_select_button">
              <property name="sizePolicy">
               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
@@ -132,7 +132,7 @@ padding: 0px;</string>
              </property>
             </widget>
            </item>
-           <item alignment="Qt::AlignHCenter">
+           <item row="1" column="0">
             <widget class="QLabel" name="label_6">
              <property name="font">
               <font>
@@ -164,8 +164,8 @@ padding: 0px;</string>
           </spacer>
          </item>
          <item row="1" column="2">
-          <layout class="QVBoxLayout" name="verticalLayout_3">
-           <item alignment="Qt::AlignHCenter">
+          <layout class="QGridLayout" name="gridLayout_12">
+           <item row="0" column="0">
             <widget class="QPushButton" name="sally_ann_select_button">
              <property name="sizePolicy">
               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
@@ -192,7 +192,7 @@ padding: 0px;</string>
              </property>
             </widget>
            </item>
-           <item alignment="Qt::AlignHCenter">
+           <item row="1" column="0">
             <widget class="QLabel" name="label_7">
              <property name="font">
               <font>
@@ -242,6 +242,19 @@ padding: 0px;</string>
              </property>
             </widget>
            </item>
+           <item row="2" column="1">
+            <spacer name="verticalSpacer_3">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>40</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
            <item row="3" column="1" alignment="Qt::AlignHCenter|Qt::AlignVCenter">
             <widget class="QPushButton" name="start_stroop_button">
              <property name="sizePolicy">
@@ -278,51 +291,11 @@ padding: 0px;</string>
              </property>
             </widget>
            </item>
-           <item row="2" column="1">
-            <spacer name="verticalSpacer_3">
-             <property name="orientation">
-              <enum>Qt::Vertical</enum>
-             </property>
-             <property name="sizeHint" stdset="0">
-              <size>
-               <width>20</width>
-               <height>40</height>
-              </size>
-             </property>
-            </spacer>
-           </item>
-           <item row="3" column="2">
-            <widget class="QPushButton" name="stroop_maltese_button">
-             <property name="minimumSize">
-              <size>
-               <width>300</width>
-               <height>70</height>
-              </size>
-             </property>
-             <property name="maximumSize">
-              <size>
-               <width>300</width>
-               <height>50</height>
-              </size>
-             </property>
-             <property name="font">
-              <font>
-               <family>Amble</family>
-               <pointsize>20</pointsize>
-               <weight>75</weight>
-               <bold>true</bold>
-              </font>
-             </property>
-             <property name="text">
-              <string>    Malti</string>
-             </property>
-            </widget>
-           </item>
-           <item row="1" column="0" colspan="3">
+           <item row="1" column="0" colspan="3" alignment="Qt::AlignHCenter">
             <widget class="QLabel" name="stroop_instructions_label">
              <property name="minimumSize">
               <size>
-               <width>800</width>
+               <width>1100</width>
                <height>0</height>
               </size>
              </property>
@@ -385,12 +358,39 @@ padding: 0px;</string>
              </property>
             </widget>
            </item>
+           <item row="3" column="2">
+            <widget class="QPushButton" name="stroop_maltese_button">
+             <property name="minimumSize">
+              <size>
+               <width>300</width>
+               <height>70</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>300</width>
+               <height>50</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>Amble</family>
+               <pointsize>20</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>    Malti</string>
+             </property>
+            </widget>
+           </item>
           </layout>
          </widget>
          <widget class="QWidget" name="stroop_colour_game">
-          <layout class="QVBoxLayout" name="verticalLayout_4">
-           <item>
-            <layout class="QGridLayout" name="gridLayout_8">
+          <layout class="QGridLayout" name="gridLayout_13">
+           <item row="0" column="0">
+            <layout class="QGridLayout" name="gridLayout_8" rowstretch="1,8,1">
              <item row="0" column="0">
               <widget class="QLabel" name="label_9">
                <property name="font">
@@ -411,7 +411,20 @@ padding: 0px;</string>
              </item>
              <item row="1" column="0">
               <layout class="QGridLayout" name="gridLayout_5">
-               <item row="1" column="0">
+               <item row="6" column="2">
+                <spacer name="verticalSpacer_2">
+                 <property name="orientation">
+                  <enum>Qt::Vertical</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>20</width>
+                   <height>40</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+               <item row="2" column="0">
                 <widget class="QLabel" name="stroop_text_6">
                  <property name="minimumSize">
                   <size>
@@ -445,687 +458,7 @@ padding: 0px;</string>
                  </property>
                 </widget>
                </item>
-               <item row="4" column="0">
-                <widget class="QLabel" name="stroop_text_21">
-                 <property name="minimumSize">
-                  <size>
-                   <width>270</width>
-                   <height>80</height>
-                  </size>
-                 </property>
-                 <property name="maximumSize">
-                  <size>
-                   <width>270</width>
-                   <height>80</height>
-                  </size>
-                 </property>
-                 <property name="font">
-                  <font>
-                   <family>Amble</family>
-                   <pointsize>36</pointsize>
-                   <weight>50</weight>
-                   <italic>false</italic>
-                   <bold>false</bold>
-                  </font>
-                 </property>
-                 <property name="styleSheet">
-                  <string notr="true"/>
-                 </property>
-                 <property name="text">
-                  <string>TextLabel</string>
-                 </property>
-                 <property name="alignment">
-                  <set>Qt::AlignCenter</set>
-                 </property>
-                </widget>
-               </item>
-               <item row="0" column="0">
-                <widget class="QLabel" name="stroop_text_1">
-                 <property name="minimumSize">
-                  <size>
-                   <width>270</width>
-                   <height>80</height>
-                  </size>
-                 </property>
-                 <property name="maximumSize">
-                  <size>
-                   <width>270</width>
-                   <height>80</height>
-                  </size>
-                 </property>
-                 <property name="font">
-                  <font>
-                   <family>Amble</family>
-                   <pointsize>36</pointsize>
-                   <weight>50</weight>
-                   <italic>false</italic>
-                   <bold>false</bold>
-                  </font>
-                 </property>
-                 <property name="styleSheet">
-                  <string notr="true"/>
-                 </property>
-                 <property name="text">
-                  <string>TextLabel</string>
-                 </property>
-                 <property name="alignment">
-                  <set>Qt::AlignCenter</set>
-                 </property>
-                </widget>
-               </item>
-               <item row="3" column="4">
-                <widget class="QLabel" name="stroop_text_20">
-                 <property name="minimumSize">
-                  <size>
-                   <width>270</width>
-                   <height>80</height>
-                  </size>
-                 </property>
-                 <property name="maximumSize">
-                  <size>
-                   <width>270</width>
-                   <height>80</height>
-                  </size>
-                 </property>
-                 <property name="font">
-                  <font>
-                   <family>Amble</family>
-                   <pointsize>36</pointsize>
-                   <weight>50</weight>
-                   <italic>false</italic>
-                   <bold>false</bold>
-                  </font>
-                 </property>
-                 <property name="styleSheet">
-                  <string notr="true"/>
-                 </property>
-                 <property name="text">
-                  <string>TextLabel</string>
-                 </property>
-                 <property name="alignment">
-                  <set>Qt::AlignCenter</set>
-                 </property>
-                </widget>
-               </item>
-               <item row="0" column="1">
-                <widget class="QLabel" name="stroop_text_2">
-                 <property name="minimumSize">
-                  <size>
-                   <width>270</width>
-                   <height>80</height>
-                  </size>
-                 </property>
-                 <property name="maximumSize">
-                  <size>
-                   <width>270</width>
-                   <height>80</height>
-                  </size>
-                 </property>
-                 <property name="font">
-                  <font>
-                   <family>Amble</family>
-                   <pointsize>36</pointsize>
-                   <weight>50</weight>
-                   <italic>false</italic>
-                   <bold>false</bold>
-                  </font>
-                 </property>
-                 <property name="styleSheet">
-                  <string notr="true"/>
-                 </property>
-                 <property name="text">
-                  <string>TextLabel</string>
-                 </property>
-                 <property name="alignment">
-                  <set>Qt::AlignCenter</set>
-                 </property>
-                </widget>
-               </item>
-               <item row="0" column="2">
-                <widget class="QLabel" name="stroop_text_3">
-                 <property name="minimumSize">
-                  <size>
-                   <width>270</width>
-                   <height>80</height>
-                  </size>
-                 </property>
-                 <property name="maximumSize">
-                  <size>
-                   <width>270</width>
-                   <height>80</height>
-                  </size>
-                 </property>
-                 <property name="font">
-                  <font>
-                   <family>Amble</family>
-                   <pointsize>36</pointsize>
-                   <weight>50</weight>
-                   <italic>false</italic>
-                   <bold>false</bold>
-                  </font>
-                 </property>
-                 <property name="styleSheet">
-                  <string notr="true"/>
-                 </property>
-                 <property name="text">
-                  <string>TextLabel</string>
-                 </property>
-                 <property name="alignment">
-                  <set>Qt::AlignCenter</set>
-                 </property>
-                </widget>
-               </item>
-               <item row="0" column="4">
-                <widget class="QLabel" name="stroop_text_5">
-                 <property name="minimumSize">
-                  <size>
-                   <width>270</width>
-                   <height>80</height>
-                  </size>
-                 </property>
-                 <property name="maximumSize">
-                  <size>
-                   <width>270</width>
-                   <height>80</height>
-                  </size>
-                 </property>
-                 <property name="font">
-                  <font>
-                   <family>Amble</family>
-                   <pointsize>36</pointsize>
-                   <weight>50</weight>
-                   <italic>false</italic>
-                   <bold>false</bold>
-                  </font>
-                 </property>
-                 <property name="styleSheet">
-                  <string notr="true"/>
-                 </property>
-                 <property name="text">
-                  <string>TextLabel</string>
-                 </property>
-                 <property name="alignment">
-                  <set>Qt::AlignCenter</set>
-                 </property>
-                </widget>
-               </item>
-               <item row="3" column="0">
-                <widget class="QLabel" name="stroop_text_16">
-                 <property name="minimumSize">
-                  <size>
-                   <width>270</width>
-                   <height>80</height>
-                  </size>
-                 </property>
-                 <property name="maximumSize">
-                  <size>
-                   <width>270</width>
-                   <height>80</height>
-                  </size>
-                 </property>
-                 <property name="font">
-                  <font>
-                   <family>Amble</family>
-                   <pointsize>36</pointsize>
-                   <weight>50</weight>
-                   <italic>false</italic>
-                   <bold>false</bold>
-                  </font>
-                 </property>
-                 <property name="styleSheet">
-                  <string notr="true"/>
-                 </property>
-                 <property name="text">
-                  <string>TextLabel</string>
-                 </property>
-                 <property name="alignment">
-                  <set>Qt::AlignCenter</set>
-                 </property>
-                </widget>
-               </item>
-               <item row="2" column="0">
-                <widget class="QLabel" name="stroop_text_11">
-                 <property name="minimumSize">
-                  <size>
-                   <width>270</width>
-                   <height>80</height>
-                  </size>
-                 </property>
-                 <property name="maximumSize">
-                  <size>
-                   <width>270</width>
-                   <height>80</height>
-                  </size>
-                 </property>
-                 <property name="font">
-                  <font>
-                   <family>Amble</family>
-                   <pointsize>36</pointsize>
-                   <weight>50</weight>
-                   <italic>false</italic>
-                   <bold>false</bold>
-                  </font>
-                 </property>
-                 <property name="styleSheet">
-                  <string notr="true"/>
-                 </property>
-                 <property name="text">
-                  <string>TextLabel</string>
-                 </property>
-                 <property name="alignment">
-                  <set>Qt::AlignCenter</set>
-                 </property>
-                </widget>
-               </item>
-               <item row="0" column="3">
-                <widget class="QLabel" name="stroop_text_4">
-                 <property name="minimumSize">
-                  <size>
-                   <width>270</width>
-                   <height>80</height>
-                  </size>
-                 </property>
-                 <property name="maximumSize">
-                  <size>
-                   <width>270</width>
-                   <height>80</height>
-                  </size>
-                 </property>
-                 <property name="font">
-                  <font>
-                   <family>Amble</family>
-                   <pointsize>36</pointsize>
-                   <weight>50</weight>
-                   <italic>false</italic>
-                   <bold>false</bold>
-                  </font>
-                 </property>
-                 <property name="styleSheet">
-                  <string notr="true"/>
-                 </property>
-                 <property name="text">
-                  <string>TextLabel</string>
-                 </property>
-                 <property name="alignment">
-                  <set>Qt::AlignCenter</set>
-                 </property>
-                </widget>
-               </item>
-               <item row="1" column="1">
-                <widget class="QLabel" name="stroop_text_7">
-                 <property name="minimumSize">
-                  <size>
-                   <width>270</width>
-                   <height>80</height>
-                  </size>
-                 </property>
-                 <property name="maximumSize">
-                  <size>
-                   <width>270</width>
-                   <height>80</height>
-                  </size>
-                 </property>
-                 <property name="font">
-                  <font>
-                   <family>Amble</family>
-                   <pointsize>36</pointsize>
-                   <weight>50</weight>
-                   <italic>false</italic>
-                   <bold>false</bold>
-                  </font>
-                 </property>
-                 <property name="styleSheet">
-                  <string notr="true"/>
-                 </property>
-                 <property name="text">
-                  <string>TextLabel</string>
-                 </property>
-                 <property name="alignment">
-                  <set>Qt::AlignCenter</set>
-                 </property>
-                </widget>
-               </item>
-               <item row="2" column="1">
-                <widget class="QLabel" name="stroop_text_12">
-                 <property name="minimumSize">
-                  <size>
-                   <width>270</width>
-                   <height>80</height>
-                  </size>
-                 </property>
-                 <property name="maximumSize">
-                  <size>
-                   <width>270</width>
-                   <height>80</height>
-                  </size>
-                 </property>
-                 <property name="font">
-                  <font>
-                   <family>Amble</family>
-                   <pointsize>36</pointsize>
-                   <weight>50</weight>
-                   <italic>false</italic>
-                   <bold>false</bold>
-                  </font>
-                 </property>
-                 <property name="styleSheet">
-                  <string notr="true"/>
-                 </property>
-                 <property name="text">
-                  <string>TextLabel</string>
-                 </property>
-                 <property name="alignment">
-                  <set>Qt::AlignCenter</set>
-                 </property>
-                </widget>
-               </item>
-               <item row="3" column="1">
-                <widget class="QLabel" name="stroop_text_17">
-                 <property name="minimumSize">
-                  <size>
-                   <width>270</width>
-                   <height>80</height>
-                  </size>
-                 </property>
-                 <property name="maximumSize">
-                  <size>
-                   <width>270</width>
-                   <height>80</height>
-                  </size>
-                 </property>
-                 <property name="font">
-                  <font>
-                   <family>Amble</family>
-                   <pointsize>36</pointsize>
-                   <weight>50</weight>
-                   <italic>false</italic>
-                   <bold>false</bold>
-                  </font>
-                 </property>
-                 <property name="styleSheet">
-                  <string notr="true"/>
-                 </property>
-                 <property name="text">
-                  <string>TextLabel</string>
-                 </property>
-                 <property name="alignment">
-                  <set>Qt::AlignCenter</set>
-                 </property>
-                </widget>
-               </item>
-               <item row="4" column="1">
-                <widget class="QLabel" name="stroop_text_22">
-                 <property name="minimumSize">
-                  <size>
-                   <width>270</width>
-                   <height>80</height>
-                  </size>
-                 </property>
-                 <property name="maximumSize">
-                  <size>
-                   <width>270</width>
-                   <height>80</height>
-                  </size>
-                 </property>
-                 <property name="font">
-                  <font>
-                   <family>Amble</family>
-                   <pointsize>36</pointsize>
-                   <weight>50</weight>
-                   <italic>false</italic>
-                   <bold>false</bold>
-                  </font>
-                 </property>
-                 <property name="styleSheet">
-                  <string notr="true"/>
-                 </property>
-                 <property name="text">
-                  <string>TextLabel</string>
-                 </property>
-                 <property name="alignment">
-                  <set>Qt::AlignCenter</set>
-                 </property>
-                </widget>
-               </item>
-               <item row="1" column="2">
-                <widget class="QLabel" name="stroop_text_8">
-                 <property name="minimumSize">
-                  <size>
-                   <width>270</width>
-                   <height>80</height>
-                  </size>
-                 </property>
-                 <property name="maximumSize">
-                  <size>
-                   <width>270</width>
-                   <height>80</height>
-                  </size>
-                 </property>
-                 <property name="font">
-                  <font>
-                   <family>Amble</family>
-                   <pointsize>36</pointsize>
-                   <weight>50</weight>
-                   <italic>false</italic>
-                   <bold>false</bold>
-                  </font>
-                 </property>
-                 <property name="styleSheet">
-                  <string notr="true"/>
-                 </property>
-                 <property name="text">
-                  <string>TextLabel</string>
-                 </property>
-                 <property name="alignment">
-                  <set>Qt::AlignCenter</set>
-                 </property>
-                </widget>
-               </item>
-               <item row="2" column="2">
-                <widget class="QLabel" name="stroop_text_13">
-                 <property name="minimumSize">
-                  <size>
-                   <width>270</width>
-                   <height>80</height>
-                  </size>
-                 </property>
-                 <property name="maximumSize">
-                  <size>
-                   <width>270</width>
-                   <height>80</height>
-                  </size>
-                 </property>
-                 <property name="font">
-                  <font>
-                   <family>Amble</family>
-                   <pointsize>36</pointsize>
-                   <weight>50</weight>
-                   <italic>false</italic>
-                   <bold>false</bold>
-                  </font>
-                 </property>
-                 <property name="styleSheet">
-                  <string notr="true"/>
-                 </property>
-                 <property name="text">
-                  <string>TextLabel</string>
-                 </property>
-                 <property name="alignment">
-                  <set>Qt::AlignCenter</set>
-                 </property>
-                </widget>
-               </item>
-               <item row="3" column="2">
-                <widget class="QLabel" name="stroop_text_18">
-                 <property name="minimumSize">
-                  <size>
-                   <width>270</width>
-                   <height>80</height>
-                  </size>
-                 </property>
-                 <property name="maximumSize">
-                  <size>
-                   <width>270</width>
-                   <height>80</height>
-                  </size>
-                 </property>
-                 <property name="font">
-                  <font>
-                   <family>Amble</family>
-                   <pointsize>36</pointsize>
-                   <weight>50</weight>
-                   <italic>false</italic>
-                   <bold>false</bold>
-                  </font>
-                 </property>
-                 <property name="styleSheet">
-                  <string notr="true"/>
-                 </property>
-                 <property name="text">
-                  <string>TextLabel</string>
-                 </property>
-                 <property name="alignment">
-                  <set>Qt::AlignCenter</set>
-                 </property>
-                </widget>
-               </item>
-               <item row="4" column="2">
-                <widget class="QLabel" name="stroop_text_23">
-                 <property name="minimumSize">
-                  <size>
-                   <width>270</width>
-                   <height>80</height>
-                  </size>
-                 </property>
-                 <property name="maximumSize">
-                  <size>
-                   <width>270</width>
-                   <height>80</height>
-                  </size>
-                 </property>
-                 <property name="font">
-                  <font>
-                   <family>Amble</family>
-                   <pointsize>36</pointsize>
-                   <weight>50</weight>
-                   <italic>false</italic>
-                   <bold>false</bold>
-                  </font>
-                 </property>
-                 <property name="styleSheet">
-                  <string notr="true"/>
-                 </property>
-                 <property name="text">
-                  <string>TextLabel</string>
-                 </property>
-                 <property name="alignment">
-                  <set>Qt::AlignCenter</set>
-                 </property>
-                </widget>
-               </item>
-               <item row="1" column="3">
-                <widget class="QLabel" name="stroop_text_9">
-                 <property name="minimumSize">
-                  <size>
-                   <width>270</width>
-                   <height>80</height>
-                  </size>
-                 </property>
-                 <property name="maximumSize">
-                  <size>
-                   <width>270</width>
-                   <height>80</height>
-                  </size>
-                 </property>
-                 <property name="font">
-                  <font>
-                   <family>Amble</family>
-                   <pointsize>36</pointsize>
-                   <weight>50</weight>
-                   <italic>false</italic>
-                   <bold>false</bold>
-                  </font>
-                 </property>
-                 <property name="styleSheet">
-                  <string notr="true"/>
-                 </property>
-                 <property name="text">
-                  <string>TextLabel</string>
-                 </property>
-                 <property name="alignment">
-                  <set>Qt::AlignCenter</set>
-                 </property>
-                </widget>
-               </item>
-               <item row="2" column="3">
-                <widget class="QLabel" name="stroop_text_14">
-                 <property name="minimumSize">
-                  <size>
-                   <width>270</width>
-                   <height>80</height>
-                  </size>
-                 </property>
-                 <property name="maximumSize">
-                  <size>
-                   <width>270</width>
-                   <height>80</height>
-                  </size>
-                 </property>
-                 <property name="font">
-                  <font>
-                   <family>Amble</family>
-                   <pointsize>36</pointsize>
-                   <weight>50</weight>
-                   <italic>false</italic>
-                   <bold>false</bold>
-                  </font>
-                 </property>
-                 <property name="styleSheet">
-                  <string notr="true"/>
-                 </property>
-                 <property name="text">
-                  <string>TextLabel</string>
-                 </property>
-                 <property name="alignment">
-                  <set>Qt::AlignCenter</set>
-                 </property>
-                </widget>
-               </item>
-               <item row="3" column="3">
-                <widget class="QLabel" name="stroop_text_19">
-                 <property name="minimumSize">
-                  <size>
-                   <width>270</width>
-                   <height>80</height>
-                  </size>
-                 </property>
-                 <property name="maximumSize">
-                  <size>
-                   <width>270</width>
-                   <height>80</height>
-                  </size>
-                 </property>
-                 <property name="font">
-                  <font>
-                   <family>Amble</family>
-                   <pointsize>36</pointsize>
-                   <weight>50</weight>
-                   <italic>false</italic>
-                   <bold>false</bold>
-                  </font>
-                 </property>
-                 <property name="styleSheet">
-                  <string notr="true"/>
-                 </property>
-                 <property name="text">
-                  <string>TextLabel</string>
-                 </property>
-                 <property name="alignment">
-                  <set>Qt::AlignCenter</set>
-                 </property>
-                </widget>
-               </item>
-               <item row="4" column="3">
+               <item row="5" column="3">
                 <widget class="QLabel" name="stroop_text_24">
                  <property name="minimumSize">
                   <size>
@@ -1159,8 +492,8 @@ padding: 0px;</string>
                  </property>
                 </widget>
                </item>
-               <item row="1" column="4">
-                <widget class="QLabel" name="stroop_text_10">
+               <item row="5" column="0">
+                <widget class="QLabel" name="stroop_text_21">
                  <property name="minimumSize">
                   <size>
                    <width>270</width>
@@ -1193,8 +526,8 @@ padding: 0px;</string>
                  </property>
                 </widget>
                </item>
-               <item row="2" column="4">
-                <widget class="QLabel" name="stroop_text_15">
+               <item row="1" column="0">
+                <widget class="QLabel" name="stroop_text_1">
                  <property name="minimumSize">
                   <size>
                    <width>270</width>
@@ -1228,7 +561,449 @@ padding: 0px;</string>
                 </widget>
                </item>
                <item row="4" column="4">
-                <widget class="QLabel" name="stroop_text_25">
+                <widget class="QLabel" name="stroop_text_20">
+                 <property name="minimumSize">
+                  <size>
+                   <width>270</width>
+                   <height>80</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>270</width>
+                   <height>80</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Amble</family>
+                   <pointsize>36</pointsize>
+                   <weight>50</weight>
+                   <italic>false</italic>
+                   <bold>false</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true"/>
+                 </property>
+                 <property name="text">
+                  <string>TextLabel</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="1">
+                <widget class="QLabel" name="stroop_text_2">
+                 <property name="minimumSize">
+                  <size>
+                   <width>270</width>
+                   <height>80</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>270</width>
+                   <height>80</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Amble</family>
+                   <pointsize>36</pointsize>
+                   <weight>50</weight>
+                   <italic>false</italic>
+                   <bold>false</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true"/>
+                 </property>
+                 <property name="text">
+                  <string>TextLabel</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="2">
+                <widget class="QLabel" name="stroop_text_3">
+                 <property name="minimumSize">
+                  <size>
+                   <width>270</width>
+                   <height>80</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>270</width>
+                   <height>80</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Amble</family>
+                   <pointsize>36</pointsize>
+                   <weight>50</weight>
+                   <italic>false</italic>
+                   <bold>false</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true"/>
+                 </property>
+                 <property name="text">
+                  <string>TextLabel</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="4">
+                <widget class="QLabel" name="stroop_text_5">
+                 <property name="minimumSize">
+                  <size>
+                   <width>270</width>
+                   <height>80</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>270</width>
+                   <height>80</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Amble</family>
+                   <pointsize>36</pointsize>
+                   <weight>50</weight>
+                   <italic>false</italic>
+                   <bold>false</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true"/>
+                 </property>
+                 <property name="text">
+                  <string>TextLabel</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item row="4" column="0">
+                <widget class="QLabel" name="stroop_text_16">
+                 <property name="minimumSize">
+                  <size>
+                   <width>270</width>
+                   <height>80</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>270</width>
+                   <height>80</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Amble</family>
+                   <pointsize>36</pointsize>
+                   <weight>50</weight>
+                   <italic>false</italic>
+                   <bold>false</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true"/>
+                 </property>
+                 <property name="text">
+                  <string>TextLabel</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item row="3" column="0">
+                <widget class="QLabel" name="stroop_text_11">
+                 <property name="minimumSize">
+                  <size>
+                   <width>270</width>
+                   <height>80</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>270</width>
+                   <height>80</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Amble</family>
+                   <pointsize>36</pointsize>
+                   <weight>50</weight>
+                   <italic>false</italic>
+                   <bold>false</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true"/>
+                 </property>
+                 <property name="text">
+                  <string>TextLabel</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="3">
+                <widget class="QLabel" name="stroop_text_4">
+                 <property name="minimumSize">
+                  <size>
+                   <width>270</width>
+                   <height>80</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>270</width>
+                   <height>80</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Amble</family>
+                   <pointsize>36</pointsize>
+                   <weight>50</weight>
+                   <italic>false</italic>
+                   <bold>false</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true"/>
+                 </property>
+                 <property name="text">
+                  <string>TextLabel</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="1">
+                <widget class="QLabel" name="stroop_text_7">
+                 <property name="minimumSize">
+                  <size>
+                   <width>270</width>
+                   <height>80</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>270</width>
+                   <height>80</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Amble</family>
+                   <pointsize>36</pointsize>
+                   <weight>50</weight>
+                   <italic>false</italic>
+                   <bold>false</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true"/>
+                 </property>
+                 <property name="text">
+                  <string>TextLabel</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item row="3" column="1">
+                <widget class="QLabel" name="stroop_text_12">
+                 <property name="minimumSize">
+                  <size>
+                   <width>270</width>
+                   <height>80</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>270</width>
+                   <height>80</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Amble</family>
+                   <pointsize>36</pointsize>
+                   <weight>50</weight>
+                   <italic>false</italic>
+                   <bold>false</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true"/>
+                 </property>
+                 <property name="text">
+                  <string>TextLabel</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item row="4" column="1">
+                <widget class="QLabel" name="stroop_text_17">
+                 <property name="minimumSize">
+                  <size>
+                   <width>270</width>
+                   <height>80</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>270</width>
+                   <height>80</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Amble</family>
+                   <pointsize>36</pointsize>
+                   <weight>50</weight>
+                   <italic>false</italic>
+                   <bold>false</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true"/>
+                 </property>
+                 <property name="text">
+                  <string>TextLabel</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item row="5" column="1">
+                <widget class="QLabel" name="stroop_text_22">
+                 <property name="minimumSize">
+                  <size>
+                   <width>270</width>
+                   <height>80</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>270</width>
+                   <height>80</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Amble</family>
+                   <pointsize>36</pointsize>
+                   <weight>50</weight>
+                   <italic>false</italic>
+                   <bold>false</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true"/>
+                 </property>
+                 <property name="text">
+                  <string>TextLabel</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="2">
+                <widget class="QLabel" name="stroop_text_8">
+                 <property name="minimumSize">
+                  <size>
+                   <width>270</width>
+                   <height>80</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>270</width>
+                   <height>80</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Amble</family>
+                   <pointsize>36</pointsize>
+                   <weight>50</weight>
+                   <italic>false</italic>
+                   <bold>false</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true"/>
+                 </property>
+                 <property name="text">
+                  <string>TextLabel</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item row="3" column="2">
+                <widget class="QLabel" name="stroop_text_13">
+                 <property name="minimumSize">
+                  <size>
+                   <width>270</width>
+                   <height>80</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>270</width>
+                   <height>80</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Amble</family>
+                   <pointsize>36</pointsize>
+                   <weight>50</weight>
+                   <italic>false</italic>
+                   <bold>false</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true"/>
+                 </property>
+                 <property name="text">
+                  <string>TextLabel</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item row="4" column="2">
+                <widget class="QLabel" name="stroop_text_18">
                  <property name="minimumSize">
                   <size>
                    <width>270</width>
@@ -1262,7 +1037,245 @@ padding: 0px;</string>
                 </widget>
                </item>
                <item row="5" column="2">
-                <spacer name="verticalSpacer_2">
+                <widget class="QLabel" name="stroop_text_23">
+                 <property name="minimumSize">
+                  <size>
+                   <width>270</width>
+                   <height>80</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>270</width>
+                   <height>80</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Amble</family>
+                   <pointsize>36</pointsize>
+                   <weight>50</weight>
+                   <italic>false</italic>
+                   <bold>false</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true"/>
+                 </property>
+                 <property name="text">
+                  <string>TextLabel</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="3">
+                <widget class="QLabel" name="stroop_text_9">
+                 <property name="minimumSize">
+                  <size>
+                   <width>270</width>
+                   <height>80</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>270</width>
+                   <height>80</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Amble</family>
+                   <pointsize>36</pointsize>
+                   <weight>50</weight>
+                   <italic>false</italic>
+                   <bold>false</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true"/>
+                 </property>
+                 <property name="text">
+                  <string>TextLabel</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item row="3" column="3">
+                <widget class="QLabel" name="stroop_text_14">
+                 <property name="minimumSize">
+                  <size>
+                   <width>270</width>
+                   <height>80</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>270</width>
+                   <height>80</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Amble</family>
+                   <pointsize>36</pointsize>
+                   <weight>50</weight>
+                   <italic>false</italic>
+                   <bold>false</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true"/>
+                 </property>
+                 <property name="text">
+                  <string>TextLabel</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item row="4" column="3">
+                <widget class="QLabel" name="stroop_text_19">
+                 <property name="minimumSize">
+                  <size>
+                   <width>270</width>
+                   <height>80</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>270</width>
+                   <height>80</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Amble</family>
+                   <pointsize>36</pointsize>
+                   <weight>50</weight>
+                   <italic>false</italic>
+                   <bold>false</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true"/>
+                 </property>
+                 <property name="text">
+                  <string>TextLabel</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="4">
+                <widget class="QLabel" name="stroop_text_10">
+                 <property name="minimumSize">
+                  <size>
+                   <width>270</width>
+                   <height>80</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>270</width>
+                   <height>80</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Amble</family>
+                   <pointsize>36</pointsize>
+                   <weight>50</weight>
+                   <italic>false</italic>
+                   <bold>false</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true"/>
+                 </property>
+                 <property name="text">
+                  <string>TextLabel</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item row="3" column="4">
+                <widget class="QLabel" name="stroop_text_15">
+                 <property name="minimumSize">
+                  <size>
+                   <width>270</width>
+                   <height>80</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>270</width>
+                   <height>80</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Amble</family>
+                   <pointsize>36</pointsize>
+                   <weight>50</weight>
+                   <italic>false</italic>
+                   <bold>false</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true"/>
+                 </property>
+                 <property name="text">
+                  <string>TextLabel</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item row="5" column="4">
+                <widget class="QLabel" name="stroop_text_25">
+                 <property name="minimumSize">
+                  <size>
+                   <width>270</width>
+                   <height>80</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>270</width>
+                   <height>80</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Amble</family>
+                   <pointsize>36</pointsize>
+                   <weight>50</weight>
+                   <italic>false</italic>
+                   <bold>false</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true"/>
+                 </property>
+                 <property name="text">
+                  <string>TextLabel</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="2">
+                <spacer name="verticalSpacer_7">
                  <property name="orientation">
                   <enum>Qt::Vertical</enum>
                  </property>
@@ -1467,14 +1480,14 @@ padding: 0px;</string>
        <item row="0" column="0">
         <widget class="QStackedWidget" name="sally_anne_stacked_widget">
          <property name="currentIndex">
-          <number>0</number>
+          <number>3</number>
          </property>
          <widget class="QWidget" name="sally_anne_instructions">
-          <layout class="QGridLayout" name="sally_anne_grid" rowstretch="1,2,1,0" columnstretch="0,0,0">
+          <layout class="QGridLayout" name="sally_anne_grid" rowstretch="1,2,1,0" columnstretch="0,0,0,0,0">
            <property name="sizeConstraint">
             <enum>QLayout::SetDefaultConstraint</enum>
            </property>
-           <item row="0" column="1">
+           <item row="0" column="2">
             <widget class="QLabel" name="label_10">
              <property name="font">
               <font>
@@ -1490,7 +1503,20 @@ padding: 0px;</string>
              </property>
             </widget>
            </item>
-           <item row="3" column="1" alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+           <item row="2" column="2">
+            <spacer name="verticalSpacer_5">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>40</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item row="3" column="2" alignment="Qt::AlignHCenter|Qt::AlignVCenter">
             <widget class="QPushButton" name="start_sally_anne_button">
              <property name="sizePolicy">
               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
@@ -1526,20 +1552,7 @@ padding: 0px;</string>
              </property>
             </widget>
            </item>
-           <item row="2" column="1">
-            <spacer name="verticalSpacer_5">
-             <property name="orientation">
-              <enum>Qt::Vertical</enum>
-             </property>
-             <property name="sizeHint" stdset="0">
-              <size>
-               <width>20</width>
-               <height>40</height>
-              </size>
-             </property>
-            </spacer>
-           </item>
-           <item row="3" column="2">
+           <item row="3" column="3">
             <widget class="QPushButton" name="sally_anne_maltese_button">
              <property name="minimumSize">
               <size>
@@ -1566,7 +1579,7 @@ padding: 0px;</string>
              </property>
             </widget>
            </item>
-           <item row="1" column="0" colspan="3">
+           <item row="1" column="1" colspan="3">
             <widget class="QLabel" name="sally_anne_instructions_label">
              <property name="minimumSize">
               <size>
@@ -1606,7 +1619,7 @@ padding: 0px;</string>
              </property>
             </widget>
            </item>
-           <item row="3" column="0">
+           <item row="3" column="1">
             <widget class="QPushButton" name="sally_anne_english_button">
              <property name="minimumSize">
               <size>
@@ -1633,11 +1646,56 @@ padding: 0px;</string>
              </property>
             </widget>
            </item>
+           <item row="3" column="0">
+            <spacer name="horizontalSpacer">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item row="3" column="4">
+            <spacer name="horizontalSpacer_2">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
           </layout>
          </widget>
-         <widget class="QWidget" name="page_2">
-          <layout class="QGridLayout" name="gridLayout_9" rowstretch="1,3,0">
-           <item row="1" column="0">
+         <widget class="QWidget" name="sally_anne_story_page">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Ignored">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_9" rowstretch="2,7,1" columnstretch="0,0,0,0,0">
+           <item row="0" column="3" rowspan="3" colspan="2">
+            <spacer name="horizontalSpacer_4">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item row="1" column="2" alignment="Qt::AlignVCenter">
             <widget class="QLabel" name="sally_anne_image_placeholder">
              <property name="text">
               <string>TextLabel</string>
@@ -1647,7 +1705,7 @@ padding: 0px;</string>
              </property>
             </widget>
            </item>
-           <item row="0" column="0">
+           <item row="0" column="2" alignment="Qt::AlignVCenter">
             <widget class="QLabel" name="sally_anne_image_caption">
              <property name="font">
               <font>
@@ -1665,7 +1723,20 @@ padding: 0px;</string>
              </property>
             </widget>
            </item>
-           <item row="2" column="0">
+           <item row="0" column="0" rowspan="3" colspan="2">
+            <spacer name="horizontalSpacer_3">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item row="2" column="2" alignment="Qt::AlignHCenter">
             <widget class="QPushButton" name="sally_anne_next_button">
              <property name="sizePolicy">
               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
@@ -1692,6 +1763,9 @@ padding: 0px;</string>
                <weight>75</weight>
                <bold>true</bold>
               </font>
+             </property>
+             <property name="layoutDirection">
+              <enum>Qt::RightToLeft</enum>
              </property>
              <property name="autoFillBackground">
               <bool>false</bool>
@@ -1770,6 +1844,150 @@ padding: 0px;</string>
               <size>
                <width>20</width>
                <height>40</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="sally_anne_explanation">
+          <layout class="QGridLayout" name="sally_anne_explanation_grid" rowstretch="1,2,1,0" columnstretch="1,7,1">
+           <property name="sizeConstraint">
+            <enum>QLayout::SetDefaultConstraint</enum>
+           </property>
+           <item row="3" column="1" alignment="Qt::AlignHCenter">
+            <widget class="QPushButton" name="sally_anne_play_again_button">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>300</width>
+               <height>50</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>300</width>
+               <height>50</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>Amble</family>
+               <pointsize>20</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="autoFillBackground">
+              <bool>false</bool>
+             </property>
+             <property name="text">
+              <string>Play Again</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QLabel" name="label50">
+             <property name="font">
+              <font>
+               <family>Amble</family>
+               <pointsize>50</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>Sally Anne Game</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1" alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+            <widget class="QLabel" name="sally_anne_explanation_label">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>1300</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>5000</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>Amble</family>
+               <pointsize>16</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>TEXT</string>
+             </property>
+             <property name="textFormat">
+              <enum>Qt::AutoText</enum>
+             </property>
+             <property name="scaledContents">
+              <bool>false</bool>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+             <property name="wordWrap">
+              <bool>true</bool>
+             </property>
+             <property name="margin">
+              <number>30</number>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="1">
+            <spacer name="verticalSpacer_4">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>40</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item row="1" column="0">
+            <spacer name="horizontalSpacer_5">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item row="1" column="2">
+            <spacer name="horizontalSpacer_6">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
               </size>
              </property>
             </spacer>

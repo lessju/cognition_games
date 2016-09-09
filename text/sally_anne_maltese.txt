@@ -33,5 +33,8 @@ Stampa 8
 [question]
 Din hija l-mistoqsija
 
+[story]
+Din hija l-istorja
+
 [explanation]
 Din hija l-ispjegazzjoni
