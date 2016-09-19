@@ -26,7 +26,7 @@
    <item row="0" column="0">
     <widget class="QStackedWidget" name="main_stacked_widget">
      <property name="currentIndex">
-      <number>1</number>
+      <number>3</number>
      </property>
      <widget class="QWidget" name="main_frame">
       <layout class="QGridLayout" name="gridLayout_2" rowstretch="0,0" columnstretch="0">
@@ -1991,7 +1991,7 @@ padding: 0px;</string>
               <bool>false</bool>
              </property>
              <property name="alignment">
-              <set>Qt::AlignCenter</set>
+              <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
              </property>
              <property name="wordWrap">
               <bool>true</bool>
