@@ -1,40 +1,107 @@
 [instructions]
-Do whatever you want
+
+This is a story game. You will see a story displayed on the screen bit by bit. Most parts of the story also have pictures. 
+All you need to do is read and understand the part of the story that you see on the screen and look at the picture if there is one.
+
+Once you are done with that part of the story click next and the next part will come up on the screen.Towards the end of the story you will be asked a question about one of the characters.
+Once you choose your answer click next and you will be able to read the end of the story.
+
+
 
 [sally_anne_0]
-Before images
+
+Sally and Anne always look forward to summer because they love going to summer school. 
+There's always a lot of fun activities to do at the summer school like sports, crafts, etc. 
+Time just flies by when they are there!
+Sally and Anne are both eight years old. 
+For the first time, this summer, they end up in the same class.
 
 [sally_anne_1]
-This is image 1
+
+This is Sally.
+
+
 
 [sally_anne_2]
-Alessio Bniedem Kbir
+
+Sally always takes her basket with her to summer school
+
+
 
 [sally_anne_3]
-This is image 3
+
+This is Anne
+
+
 
 [sally_anne_4]
-This is image 4
+
+Anne always takes her box with her to summer school.
+
+
 
 [sally_anne_5]
-This is image 5
+
+Sally has a ball that she always takes with her to summer school. 
+Its her favorite toy and she plays a lot with it. 
+When she is not playing with the ball, Sally puts it in her basket because she doesn't want to lose it.
+
+
 
 [sally_anne_6]
-This is image 6
+
+Sally decides to go and play a bit outside. 
+She puts the ball in her basket.
 
 [sally_anne_7]
-This is image 7
+
+Anne has always liked Sally's ball. She's always wanted one just like it. 
+When Sally goes to play outside she decides to take Sally's ball. 
+She puts the ball in her box.
 
 [sally_anne_8]
-This is image 8
+
+Sally comes back from playing outside. 
+She goes to take her ball out so she can play with it again.
+
+
 
 [question]
-This is the question
+
+Where will Sally look to find her ball?
+Click on one of the pictures to answer.
+
+
 
 [story]
-This is the story
+Sally looks in her basket. 
+Before she did not see Anne take the ball out of her basket and put it in her box.
+So now she is surprised to find out that her ball is not there.
+Sally feels very sad and she starts crying because she thinks she has lost her ball.
+Upon seeing this Anne feels very guilty for having taken Sally's ball.
+She takes the ball out of her box, where she had hid it and gives it back to Sally.
+She explains to Sally that she took the ball because she always wanted one just like it. 
+She apologises and asks Sally to forgive her.
+Sally forgives her and tells her that from now onwards they can play with the ball together.
+Sally and Anne become friends.
+
 
 [explanation]
-This is the explanation, oh yeah the explanationThis is the explanation, oh yeah the explanationThis is the explanation, oh yeah the explanationThis is the explanation, oh yeah the explanationThis is the explanation, oh yeah the explanationThis is the explanation, oh yeah the explanationThis is the explanation, oh yeah the explanationThis is the explanation, oh yeah the explanationThis is the explanation, oh yeah the explanationThis is the explanation, oh yeah the explanationThis is the explanation, oh yeah the explanationThis is the explanation, oh yeah the explanationThis is the explanation, oh yeah the explanationThis is the explanation, oh yeah the explanationThis is the explanation, oh yeah the explanationThis is the explanation, oh yeah the explanation
 
+This 'game' is actually an experiment used to test 'Theory of Mind'. Theory of mind is the ability to understand one'self's or other people's beliefs, desires, intentions, emotions etc.
+Theory of mind is important because this ability to understand what other people feel or believe allows us to predict what they will do.
 
+The test was developed by Simon Baron-Cohen, Alan Leslie and Uta Firth in 1985.
+These scientists carried out the test with children diagnosed with Autism, Down's Syndrome and typically developing children.
+In order to pass the test the participant must answer the question by saying that Sally thinks the marble is still in her basket.
+If the participant answers correctly s/he has Theory of mind because s/he can understand Sally's perspective.
+If the participant answers incorrectly by saying that Sally will look in the box, s/he does not have Theory of Mind.
+In this case the participant does not seem to understand that Sally's perspective can be different from his/her own.
+
+80% of children diagnosed with autism answer the question incorrectly.
+14% of children diagnosed with down syndrome also get the question incorrectly.
+In the case of typically developing children, very small children (under the age of 6) usually are not able to guess correctly.
+This is because Theory of Mind takes time to develop. 
+Most typically developing children aged 6 or 7 guess correctly.
+There is evidence to believe that the development of theory of mind is closely intertwined with language development in humans. 
+This is why it has been proposed that lacking Theory of Mind may explain some of the social and communication difficulties experienced by individuals with developmental issues such as autism. (Tager-Flusberg (2007), Frith & Frith (2003))

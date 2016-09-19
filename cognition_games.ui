@@ -428,7 +428,7 @@ padding: 0px;</string>
                 <widget class="QLabel" name="stroop_text_6">
                  <property name="minimumSize">
                   <size>
-                   <width>270</width>
+                   <width>300</width>
                    <height>80</height>
                   </size>
                  </property>
@@ -462,7 +462,7 @@ padding: 0px;</string>
                 <widget class="QLabel" name="stroop_text_24">
                  <property name="minimumSize">
                   <size>
-                   <width>270</width>
+                   <width>300</width>
                    <height>80</height>
                   </size>
                  </property>
@@ -496,7 +496,7 @@ padding: 0px;</string>
                 <widget class="QLabel" name="stroop_text_21">
                  <property name="minimumSize">
                   <size>
-                   <width>270</width>
+                   <width>300</width>
                    <height>80</height>
                   </size>
                  </property>
@@ -530,7 +530,7 @@ padding: 0px;</string>
                 <widget class="QLabel" name="stroop_text_1">
                  <property name="minimumSize">
                   <size>
-                   <width>270</width>
+                   <width>300</width>
                    <height>80</height>
                   </size>
                  </property>
@@ -564,7 +564,7 @@ padding: 0px;</string>
                 <widget class="QLabel" name="stroop_text_20">
                  <property name="minimumSize">
                   <size>
-                   <width>270</width>
+                   <width>300</width>
                    <height>80</height>
                   </size>
                  </property>
@@ -598,7 +598,7 @@ padding: 0px;</string>
                 <widget class="QLabel" name="stroop_text_2">
                  <property name="minimumSize">
                   <size>
-                   <width>270</width>
+                   <width>300</width>
                    <height>80</height>
                   </size>
                  </property>
@@ -632,7 +632,7 @@ padding: 0px;</string>
                 <widget class="QLabel" name="stroop_text_3">
                  <property name="minimumSize">
                   <size>
-                   <width>270</width>
+                   <width>300</width>
                    <height>80</height>
                   </size>
                  </property>
@@ -666,7 +666,7 @@ padding: 0px;</string>
                 <widget class="QLabel" name="stroop_text_5">
                  <property name="minimumSize">
                   <size>
-                   <width>270</width>
+                   <width>300</width>
                    <height>80</height>
                   </size>
                  </property>
@@ -700,7 +700,7 @@ padding: 0px;</string>
                 <widget class="QLabel" name="stroop_text_16">
                  <property name="minimumSize">
                   <size>
-                   <width>270</width>
+                   <width>300</width>
                    <height>80</height>
                   </size>
                  </property>
@@ -734,7 +734,7 @@ padding: 0px;</string>
                 <widget class="QLabel" name="stroop_text_11">
                  <property name="minimumSize">
                   <size>
-                   <width>270</width>
+                   <width>300</width>
                    <height>80</height>
                   </size>
                  </property>
@@ -768,7 +768,7 @@ padding: 0px;</string>
                 <widget class="QLabel" name="stroop_text_4">
                  <property name="minimumSize">
                   <size>
-                   <width>270</width>
+                   <width>300</width>
                    <height>80</height>
                   </size>
                  </property>
@@ -802,7 +802,7 @@ padding: 0px;</string>
                 <widget class="QLabel" name="stroop_text_7">
                  <property name="minimumSize">
                   <size>
-                   <width>270</width>
+                   <width>300</width>
                    <height>80</height>
                   </size>
                  </property>
@@ -836,7 +836,7 @@ padding: 0px;</string>
                 <widget class="QLabel" name="stroop_text_12">
                  <property name="minimumSize">
                   <size>
-                   <width>270</width>
+                   <width>300</width>
                    <height>80</height>
                   </size>
                  </property>
@@ -870,7 +870,7 @@ padding: 0px;</string>
                 <widget class="QLabel" name="stroop_text_17">
                  <property name="minimumSize">
                   <size>
-                   <width>270</width>
+                   <width>300</width>
                    <height>80</height>
                   </size>
                  </property>
@@ -904,7 +904,7 @@ padding: 0px;</string>
                 <widget class="QLabel" name="stroop_text_22">
                  <property name="minimumSize">
                   <size>
-                   <width>270</width>
+                   <width>300</width>
                    <height>80</height>
                   </size>
                  </property>
@@ -938,7 +938,7 @@ padding: 0px;</string>
                 <widget class="QLabel" name="stroop_text_8">
                  <property name="minimumSize">
                   <size>
-                   <width>270</width>
+                   <width>300</width>
                    <height>80</height>
                   </size>
                  </property>
@@ -972,7 +972,7 @@ padding: 0px;</string>
                 <widget class="QLabel" name="stroop_text_13">
                  <property name="minimumSize">
                   <size>
-                   <width>270</width>
+                   <width>300</width>
                    <height>80</height>
                   </size>
                  </property>
@@ -1006,7 +1006,7 @@ padding: 0px;</string>
                 <widget class="QLabel" name="stroop_text_18">
                  <property name="minimumSize">
                   <size>
-                   <width>270</width>
+                   <width>300</width>
                    <height>80</height>
                   </size>
                  </property>
@@ -1040,7 +1040,7 @@ padding: 0px;</string>
                 <widget class="QLabel" name="stroop_text_23">
                  <property name="minimumSize">
                   <size>
-                   <width>270</width>
+                   <width>300</width>
                    <height>80</height>
                   </size>
                  </property>
@@ -1074,7 +1074,7 @@ padding: 0px;</string>
                 <widget class="QLabel" name="stroop_text_9">
                  <property name="minimumSize">
                   <size>
-                   <width>270</width>
+                   <width>300</width>
                    <height>80</height>
                   </size>
                  </property>
@@ -1108,7 +1108,7 @@ padding: 0px;</string>
                 <widget class="QLabel" name="stroop_text_14">
                  <property name="minimumSize">
                   <size>
-                   <width>270</width>
+                   <width>300</width>
                    <height>80</height>
                   </size>
                  </property>
@@ -1142,7 +1142,7 @@ padding: 0px;</string>
                 <widget class="QLabel" name="stroop_text_19">
                  <property name="minimumSize">
                   <size>
-                   <width>270</width>
+                   <width>300</width>
                    <height>80</height>
                   </size>
                  </property>
@@ -1176,7 +1176,7 @@ padding: 0px;</string>
                 <widget class="QLabel" name="stroop_text_10">
                  <property name="minimumSize">
                   <size>
-                   <width>270</width>
+                   <width>300</width>
                    <height>80</height>
                   </size>
                  </property>
@@ -1210,7 +1210,7 @@ padding: 0px;</string>
                 <widget class="QLabel" name="stroop_text_15">
                  <property name="minimumSize">
                   <size>
-                   <width>270</width>
+                   <width>300</width>
                    <height>80</height>
                   </size>
                  </property>
@@ -1244,7 +1244,7 @@ padding: 0px;</string>
                 <widget class="QLabel" name="stroop_text_25">
                  <property name="minimumSize">
                   <size>
-                   <width>270</width>
+                   <width>300</width>
                    <height>80</height>
                   </size>
                  </property>
@@ -1366,7 +1366,7 @@ padding: 0px;</string>
              </property>
              <property name="maximumSize">
               <size>
-               <width>1200</width>
+               <width>1600</width>
                <height>16777215</height>
               </size>
              </property>
@@ -1496,7 +1496,7 @@ padding: 0px;</string>
               </font>
              </property>
              <property name="text">
-              <string>Sally Anne Game</string>
+              <string>Sally and Anne Game</string>
              </property>
              <property name="alignment">
               <set>Qt::AlignCenter</set>
@@ -1900,7 +1900,7 @@ padding: 0px;</string>
               </font>
              </property>
              <property name="text">
-              <string>Sally Anne Game</string>
+              <string>Sally and Anne Game</string>
              </property>
              <property name="alignment">
               <set>Qt::AlignCenter</set>
