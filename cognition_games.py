@@ -31,9 +31,6 @@ class CognitionGames(gui.QMainWindow):
         self._main_widget.stroop_select_button.setIcon(gui.QIcon('images/stroop_game.jpg'))
         self._main_widget.stroop_select_button.setIconSize(self._main_widget.stroop_select_button.size())
 
-        self._main_widget.wug_select_button.setIcon(gui.QIcon('images/wug_game.jpg'))
-        self._main_widget.wug_select_button.setIconSize(self._main_widget.wug_select_button.size())
-
         self._main_widget.sally_ann_select_button.setIcon(gui.QIcon('images/sally_anne_game.jpg'))
         self._main_widget.sally_ann_select_button.setIconSize(self._main_widget.sally_ann_select_button.size())
 
@@ -49,6 +46,7 @@ class CognitionGames(gui.QMainWindow):
 
         #  Connect signals (Stroop)
         core.QObject.connect(self._main_widget.stroop_select_button, core.SIGNAL('clicked()'), self.select_stroop)
+        core.QObject.connect(self._main_widget.stroop_change_game_button, core.SIGNAL("clicked()"), self.reset_game)
         core.QObject.connect(self._main_widget.start_stroop_button, core.SIGNAL('clicked()'), self.start_stroop_game)
         core.QObject.connect(self._main_widget.ready_stroop_game_button, core.SIGNAL('clicked()'),  #
                              self.start_stroop_game)
@@ -56,12 +54,10 @@ class CognitionGames(gui.QMainWindow):
         core.QObject.connect(self._main_widget.stroop_english_button, core.SIGNAL('clicked()'), self.set_stroop_english)
         core.QObject.connect(self._main_widget.stroop_maltese_button, core.SIGNAL('clicked()'), self.set_stroop_maltese)
 
-        # Connect signals (Wug)
-        core.QObject.connect(self._main_widget.wug_select_button, core.SIGNAL('clicked()'), self.select_wug)
-
         # Connect signals (Sally Anne)
         core.QObject.connect(self._main_widget.sally_ann_select_button, core.SIGNAL('clicked()'),
                              self.select_sally_anne)
+        core.QObject.connect(self._main_widget.sally_anne_change_game_button, core.SIGNAL("clicked()"), self.reset_game)
         core.QObject.connect(self._main_widget.start_sally_anne_button, core.SIGNAL('clicked()'),
                              self.start_sally_anne_game)
         core.QObject.connect(self._main_widget.sally_anne_english_button, core.SIGNAL('clicked()'),
@@ -136,6 +132,9 @@ class CognitionGames(gui.QMainWindow):
         self._start_time = None
         self._maltese = False
 
+    def reset_game(self):
+        self._main_widget.main_stacked_widget.setCurrentIndex(0)
+
     # ------------------------------------------ Stroop functions ----------------------------------------
     def set_stroop_english(self):
         self._maltese = False
@@ -154,12 +153,14 @@ class CognitionGames(gui.QMainWindow):
             self._main_widget.stroop_play_again_button.setText(u"Erga Ilgħab")
             self._main_widget.ready_stroop_game_button.setText("Lest")
             self._main_widget.stroop_explanation_label.setText(self._stroop_maltese_text['explanation'])
+            self._main_widget.stroop_play_again_button.setText(u"Biddel il-Logħoba")
         else:
             self._main_widget.stroop_instructions_label.setText(self._stroop_english_text['instructions'])
             self._main_widget.start_stroop_button.setText("Start")
             self._main_widget.stroop_play_again_button.setText("Play Again")
             self._main_widget.ready_stroop_game_button.setText("Ready")
             self._main_widget.stroop_explanation_label.setText(self._stroop_english_text['explanation'])
+            self._main_widget.stroop_play_again_button.setText("Change gane")
 
         self._main_widget.stroop_english_button.setVisible(False)
         self._main_widget.stroop_maltese_button.setVisible(False)
@@ -220,11 +221,6 @@ class CognitionGames(gui.QMainWindow):
         msg.setWindowTitle("Stroop Game")
         msg.setStandardButtons(gui.QMessageBox.Ok)
         msg.exec_()
-
-    # ------------------------------------------- Wug functions -------------------------------------------
-    def select_wug(self):
-        """ Switch to Wug game screen """
-        self._main_widget.main_stacked_widget.setCurrentIndex(2)
 
     # ------------------------------------------ Sally Anne functions -------------------------------------
     def set_sally_anne_english(self):
@@ -323,11 +319,11 @@ class CognitionGames(gui.QMainWindow):
         # Set pixmaps for Sally Anne answer buttons
         language = 'maltese' if self._maltese else 'english'
         self._main_widget.sally_anne_answer_1_button.setIcon(gui.QIcon('images/sally_anne_%s/basket.jpg' % language))
-        self._main_widget.sally_anne_answer_1_button.setIconSize(self._main_widget.stroop_select_button.size())
+        self._main_widget.sally_anne_answer_1_button.setIconSize(self._main_widget.sally_anne_answer_1_button.size())
         self._main_widget.sally_anne_answer_1_button.setText("")
 
         self._main_widget.sally_anne_answer_2_button.setIcon(gui.QIcon('images/sally_anne_%s/box.jpg' % language))
-        self._main_widget.sally_anne_answer_2_button.setIconSize(self._main_widget.wug_select_button.size())
+        self._main_widget.sally_anne_answer_2_button.setIconSize(self._main_widget.sally_anne_answer_2_button.size())
         self._main_widget.sally_anne_answer_2_button.setText("")
 
     def sally_anne_answer_1_pressed(self):
@@ -357,18 +353,22 @@ class CognitionGames(gui.QMainWindow):
         # Switch to next page
         self._sally_anne_page_index = 0
         self._main_widget.sally_anne_stacked_widget.setCurrentIndex(3)
+        self._main_widget.sally_anne_change_game_button.setVisible(False)
 
     def sally_anne_final_page(self):
         """ Final page of sally anne game """
+        self._main_widget.sally_anne_change_game_button.setVisible(True)
         if self._sally_anne_page_index == 0:
             if self._maltese:
                 self._main_widget.sally_anne_play_again_button.setText(u"Erga Ilgħab")
+                self._main_widget.sally_anne_change_game_button.setText("Change game")
                 self._main_widget.sally_anne_explanation_label.setText(
                     unicode(self._sally_anne_maltese_text["explanation"]))
             else:
                 self._main_widget.sally_anne_play_again_button.setText("Play Again")
                 self._main_widget.sally_anne_explanation_label.setText(
                     unicode(self._sally_anne_english_text["explanation"]))
+                self._main_widget.sally_anne_change_game_button.setText(u"Biddel il-Logħoba")
             self._sally_anne_page_index = 1
         else:
             self._main_widget.sally_anne_stacked_widget.setCurrentIndex(0)

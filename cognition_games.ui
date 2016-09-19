@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1432</width>
-    <height>726</height>
+    <width>1582</width>
+    <height>732</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -34,8 +34,8 @@
         <number>1</number>
        </property>
        <item row="1" column="0">
-        <layout class="QGridLayout" name="main_frame_grid" rowstretch="5,5,5,1" columnstretch="1,1,1">
-         <item row="0" column="0" colspan="3">
+        <layout class="QGridLayout" name="main_frame_grid" rowstretch="3,2,1,1" columnstretch="1,1">
+         <item row="0" column="0" colspan="2">
           <widget class="QLabel" name="label">
            <property name="font">
             <font>
@@ -104,66 +104,6 @@ padding: 0px;</string>
           </layout>
          </item>
          <item row="1" column="1">
-          <layout class="QGridLayout" name="gridLayout_11">
-           <item row="0" column="0">
-            <widget class="QPushButton" name="wug_select_button">
-             <property name="sizePolicy">
-              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-               <horstretch>0</horstretch>
-               <verstretch>0</verstretch>
-              </sizepolicy>
-             </property>
-             <property name="minimumSize">
-              <size>
-               <width>400</width>
-               <height>300</height>
-              </size>
-             </property>
-             <property name="focusPolicy">
-              <enum>Qt::NoFocus</enum>
-             </property>
-             <property name="styleSheet">
-              <string notr="true">margin: 50px;
-border: none;
-padding: 0px;</string>
-             </property>
-             <property name="text">
-              <string/>
-             </property>
-            </widget>
-           </item>
-           <item row="1" column="0">
-            <widget class="QLabel" name="label_6">
-             <property name="font">
-              <font>
-               <family>Amble</family>
-               <pointsize>25</pointsize>
-              </font>
-             </property>
-             <property name="text">
-              <string>Wug Game</string>
-             </property>
-             <property name="alignment">
-              <set>Qt::AlignCenter</set>
-             </property>
-            </widget>
-           </item>
-          </layout>
-         </item>
-         <item row="2" column="0" rowspan="2" colspan="3">
-          <spacer name="verticalSpacer">
-           <property name="orientation">
-            <enum>Qt::Vertical</enum>
-           </property>
-           <property name="sizeHint" stdset="0">
-            <size>
-             <width>20</width>
-             <height>40</height>
-            </size>
-           </property>
-          </spacer>
-         </item>
-         <item row="1" column="2">
           <layout class="QGridLayout" name="gridLayout_12">
            <item row="0" column="0">
             <widget class="QPushButton" name="sally_ann_select_button">
@@ -210,6 +150,19 @@ padding: 0px;</string>
            </item>
           </layout>
          </item>
+         <item row="2" column="0" rowspan="2" colspan="2">
+          <spacer name="verticalSpacer">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
         </layout>
        </item>
       </layout>
@@ -219,7 +172,7 @@ padding: 0px;</string>
        <item row="0" column="0" alignment="Qt::AlignHCenter">
         <widget class="QStackedWidget" name="stroop_stacked_widget">
          <property name="currentIndex">
-          <number>1</number>
+          <number>2</number>
          </property>
          <widget class="QWidget" name="stroop_instructions">
           <layout class="QGridLayout" name="stroop_games_grid" rowstretch="1,2,1,0" columnstretch="0,0,0">
@@ -1330,27 +1283,109 @@ padding: 0px;</string>
           </layout>
          </widget>
          <widget class="QWidget" name="stroop_explanation">
-          <layout class="QGridLayout" name="stroop_games_grid" rowstretch="1,2,1,0" columnstretch="0">
+          <layout class="QGridLayout" name="stroop_games_grid" rowstretch="1,4,1,1" columnstretch="1,1,1,1,1">
            <property name="sizeConstraint">
             <enum>QLayout::SetDefaultConstraint</enum>
            </property>
-           <item row="0" column="0">
-            <widget class="QLabel" name="label10">
+           <item row="3" column="1">
+            <widget class="QPushButton" name="stroop_play_again_button">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>300</width>
+               <height>50</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>300</width>
+               <height>50</height>
+              </size>
+             </property>
              <property name="font">
               <font>
                <family>Amble</family>
-               <pointsize>50</pointsize>
+               <pointsize>20</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
               </font>
              </property>
-             <property name="text">
-              <string>Stroop Game</string>
+             <property name="autoFillBackground">
+              <bool>false</bool>
              </property>
-             <property name="alignment">
-              <set>Qt::AlignCenter</set>
+             <property name="text">
+              <string>Play Again</string>
              </property>
             </widget>
            </item>
-           <item row="1" column="0">
+           <item row="3" column="0">
+            <spacer name="horizontalSpacer_7">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item row="3" column="3">
+            <widget class="QPushButton" name="stroop_change_game_button">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>300</width>
+               <height>50</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>300</width>
+               <height>50</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>Amble</family>
+               <pointsize>20</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="autoFillBackground">
+              <bool>false</bool>
+             </property>
+             <property name="text">
+              <string>Change Game</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="4">
+            <spacer name="horizontalSpacer_8">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item row="1" column="0" colspan="5">
             <widget class="QLabel" name="stroop_explanation_label">
              <property name="sizePolicy">
               <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
@@ -1396,54 +1431,21 @@ padding: 0px;</string>
              </property>
             </widget>
            </item>
-           <item row="3" column="0" alignment="Qt::AlignHCenter">
-            <widget class="QPushButton" name="stroop_play_again_button">
-             <property name="sizePolicy">
-              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-               <horstretch>0</horstretch>
-               <verstretch>0</verstretch>
-              </sizepolicy>
-             </property>
-             <property name="minimumSize">
-              <size>
-               <width>300</width>
-               <height>50</height>
-              </size>
-             </property>
-             <property name="maximumSize">
-              <size>
-               <width>300</width>
-               <height>50</height>
-              </size>
-             </property>
+           <item row="0" column="0" colspan="5">
+            <widget class="QLabel" name="label10">
              <property name="font">
               <font>
                <family>Amble</family>
-               <pointsize>20</pointsize>
-               <weight>75</weight>
-               <bold>true</bold>
+               <pointsize>50</pointsize>
               </font>
              </property>
-             <property name="autoFillBackground">
-              <bool>false</bool>
-             </property>
              <property name="text">
-              <string>Play Again</string>
+              <string>Stroop Game</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
              </property>
             </widget>
-           </item>
-           <item row="2" column="0">
-            <spacer name="verticalSpacer_4">
-             <property name="orientation">
-              <enum>Qt::Vertical</enum>
-             </property>
-             <property name="sizeHint" stdset="0">
-              <size>
-               <width>20</width>
-               <height>40</height>
-              </size>
-             </property>
-            </spacer>
            </item>
           </layout>
          </widget>
@@ -1851,11 +1853,11 @@ padding: 0px;</string>
           </layout>
          </widget>
          <widget class="QWidget" name="sally_anne_explanation">
-          <layout class="QGridLayout" name="sally_anne_explanation_grid" rowstretch="1,2,1,0" columnstretch="1,7,1">
+          <layout class="QGridLayout" name="sally_anne_explanation_grid" rowstretch="1,5,1" columnstretch="1,1,1,1,1">
            <property name="sizeConstraint">
             <enum>QLayout::SetDefaultConstraint</enum>
            </property>
-           <item row="3" column="1" alignment="Qt::AlignHCenter">
+           <item row="2" column="1">
             <widget class="QPushButton" name="sally_anne_play_again_button">
              <property name="sizePolicy">
               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
@@ -1891,23 +1893,69 @@ padding: 0px;</string>
              </property>
             </widget>
            </item>
-           <item row="0" column="1">
-            <widget class="QLabel" name="label50">
+           <item row="2" column="0">
+            <spacer name="horizontalSpacer_5">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item row="2" column="3">
+            <widget class="QPushButton" name="sally_anne_change_game_button">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>300</width>
+               <height>50</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>300</width>
+               <height>50</height>
+              </size>
+             </property>
              <property name="font">
               <font>
                <family>Amble</family>
-               <pointsize>50</pointsize>
+               <pointsize>20</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
               </font>
              </property>
-             <property name="text">
-              <string>Sally and Anne Game</string>
+             <property name="autoFillBackground">
+              <bool>false</bool>
              </property>
-             <property name="alignment">
-              <set>Qt::AlignCenter</set>
+             <property name="text">
+              <string>Change Game</string>
              </property>
             </widget>
            </item>
-           <item row="1" column="1" alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+           <item row="2" column="4">
+            <spacer name="horizontalSpacer_6">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item row="1" column="0" colspan="5">
             <widget class="QLabel" name="sally_anne_explanation_label">
              <property name="sizePolicy">
               <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
@@ -1953,44 +2001,21 @@ padding: 0px;</string>
              </property>
             </widget>
            </item>
-           <item row="2" column="1">
-            <spacer name="verticalSpacer_4">
-             <property name="orientation">
-              <enum>Qt::Vertical</enum>
+           <item row="0" column="0" colspan="5">
+            <widget class="QLabel" name="label50">
+             <property name="font">
+              <font>
+               <family>Amble</family>
+               <pointsize>50</pointsize>
+              </font>
              </property>
-             <property name="sizeHint" stdset="0">
-              <size>
-               <width>20</width>
-               <height>40</height>
-              </size>
+             <property name="text">
+              <string>Sally and Anne Game</string>
              </property>
-            </spacer>
-           </item>
-           <item row="1" column="0">
-            <spacer name="horizontalSpacer_5">
-             <property name="orientation">
-              <enum>Qt::Horizontal</enum>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
              </property>
-             <property name="sizeHint" stdset="0">
-              <size>
-               <width>40</width>
-               <height>20</height>
-              </size>
-             </property>
-            </spacer>
-           </item>
-           <item row="1" column="2">
-            <spacer name="horizontalSpacer_6">
-             <property name="orientation">
-              <enum>Qt::Horizontal</enum>
-             </property>
-             <property name="sizeHint" stdset="0">
-              <size>
-               <width>40</width>
-               <height>20</height>
-              </size>
-             </property>
-            </spacer>
+            </widget>
            </item>
           </layout>
          </widget>
@@ -2003,7 +2028,6 @@ padding: 0px;</string>
   </layout>
  </widget>
  <tabstops>
-  <tabstop>wug_select_button</tabstop>
   <tabstop>sally_ann_select_button</tabstop>
   <tabstop>start_stroop_button</tabstop>
   <tabstop>stroop_select_button</tabstop>
