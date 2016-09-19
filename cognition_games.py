@@ -153,14 +153,14 @@ class CognitionGames(gui.QMainWindow):
             self._main_widget.stroop_play_again_button.setText(u"Erga Ilgħab")
             self._main_widget.ready_stroop_game_button.setText("Lest")
             self._main_widget.stroop_explanation_label.setText(self._stroop_maltese_text['explanation'])
-            self._main_widget.stroop_play_again_button.setText(u"Biddel il-Logħoba")
+            self._main_widget.stroop_change_game_button.setText(u"Biddel il-Logħoba")
         else:
             self._main_widget.stroop_instructions_label.setText(self._stroop_english_text['instructions'])
             self._main_widget.start_stroop_button.setText("Start")
             self._main_widget.stroop_play_again_button.setText("Play Again")
             self._main_widget.ready_stroop_game_button.setText("Ready")
             self._main_widget.stroop_explanation_label.setText(self._stroop_english_text['explanation'])
-            self._main_widget.stroop_play_again_button.setText("Change gane")
+            self._main_widget.stroop_change_game_button.setText("Change game")
 
         self._main_widget.stroop_english_button.setVisible(False)
         self._main_widget.stroop_maltese_button.setVisible(False)
