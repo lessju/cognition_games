@@ -1,40 +1,77 @@
 [instructions]
-Agħmel liż-żobb trid
+Din hija storja b’logħba fiha stess.
+L-istorja ħa taraha fuq l-iskrin biċċa biċċa. 
+Ħafna mill-partijiet tal-istorja għandhom l-istampi.
+Kull ma trid tagħmel hu li taqra u tifhem il-parti tal-istorja li tkun qiegħed tara fuq l-iskrin u tħares lejn l-istampa.
+X’ħin tkun lest minn dik il-parti tal-istorja agħfas il-buttuna ‘li jmiss’ u l-kumplament tal-istorja jiġi jidher fuq l-iskrin.
+Lejn l-aħħar tal-istorja, ħa tkun mistoqsi xi mistoqsijiet dwar waħda mill-karattri.
+La darba tagħżel it-tweġiba tiegħek aġħfas il-buttum ‘li jmiss’ u b’hekk tkun tista’ taqra l-aħħar biċċa tal-istorja.
 
 [sally_anne_0]
-Qabel l-istampi
-
-Hekk hu, qabel l-istampi
+Sally u Anne dejjem ikunu ħerqana għas-sajf għaliex iħobbu ħafna jmorru l-iskola sajf.
+Hemm dejjem ikun hemm ħafna attivitajiet bħal sports, krafts, etċ.
+Il-ħin qisu jtir meta jkunu hemm.
+Sally u Anne għandhom tmien snin.
+Għall-ewwel darba dan is-sajf, inzertaw fl-istess klassi.
 
 [sally_anne_1]
-Stampa 1
+Din hi Sally.
 
 [sally_anne_2]
-Stampa 2
+Sally dejjem tieħu l-qoffa magħha l-iskola sajf.
 
 [sally_anne_3]
-Stampa 3
+Din hi Anne.
 
 [sally_anne_4]
-Stampa 4
+Anne dejjem tieħu kaxxa magħha l-iskola sajf.
 
 [sally_anne_5]
-Stampa 5
+Sally għandha ballun li dejjem tieħdu magħha l-iskola sajf.
+Huwa l-aktar ġugarell favorit tagħha u tilgħab ħafna bih.
+Meta ma tkunx qiegħda tilgħab bil-ballun, Sally tpoġġih fil-qoffa biex ma titilfux.
 
 [sally_anne_6]
-Stampa 6
+Sally tiddeċidi li toħroġ tilgħab barra.
+Hi tpoġġi l-ballun fil-qoffa.
 
 [sally_anne_7]
-Stampa 7
+Anne dejjem kien jogħġobha l-ballun ta’ Sally, u dejjem xtaqet wieħed bħalu.
+Meta Sally toħroġ tilgħab barra, Anne tiddeċidi li tieħu l-ballun ta’ Sally.
+Anne tpoġġi l-ballun fil-kaxxa tagħha.
+
 
 [sally_anne_8]
-Stampa 8
+Sally tidħol lura ġewwa.
+Hi tmur biex tieħu l-ballun biex terġa tilgħab bih.
 
 [question]
-Din hija l-mistoqsija
+Fejn taħseb li Sally ħa tmur tfittex il-ballun?
+(Agħfas fuq wadħda mill-istampi biex twieġeb.)
 
 [story]
-Din hija l-istorja
+Sally tħares lejn il-qoffa tagħha b’dispjaċir għaliex tinduna li l-ballun tagħha mhuwiex hemm. 
+Hi tibda tibki għaliex taħseb li tilfet il-ballun. 
+X’ħin bdiet tara dan, Anne bdiet tħossha ħażin ħafna talli ħadet il-ballun lil Sally.
+Hi toħroġ il-ballun minn ġol-kaxxa tagħha, fejn kienet poġġietu qabel, u tatih lura lil Sally.
+Anne tispjega lil Sally li hi ħadet il-ballun għaliex dejjem xtaqet wieħed bħalu.
+Hi tiskuża ruħa u ssaqsi lil Sally għall-maħfra tagħha.
+Sally taħfer lil Anne u tgħidilha li minn dik il-ġurnata ‘l quddiem setgħu jilgħabu flimkien.
+Hekk Sally u Anne saru ħbieb.
 
 [explanation]
-Din hija l-ispjegazzjoni
+Din il-logħba hija esperiment li ħafna drabi tintuża biex tittestja l-Teorija tal-Moħħ (Theory of Mind).
+Din it-teorija tispjega l-abiltà biex l-umani jifhmu lilhom infushom u x-xewqat, l-intenzjonijiet, etċ ta’ ħaddieħor. Għalhekk, din it-teorija hija importanti ħafna għaliex permezz tal- abiltà li nifhmu x’jħossu u x’jemmnu nies oħra tgħina nbassru l-azzjoni ta’ dawn in-nies.
+
+Sally-Anne test kien żviluppat minn Simon Baron-Cohen, Alan Leslie u Uta Firth fl-1985. Dawn ir-riċerkaturi pruvaw dan it-test ma’ tfal awtistiċi, b’Down’s Syndrome u ma’ tfal żgħar li għadhom qed jiżviluppaw.
+Sabiex jgħaddu dan it-test, il-parteċipanti għandhom iweiġbu li Sally taħseb li l-ballun għadu fil-qoffa tagħha għaliex hi hemm tiftakar li ħallietu.
+Jekk il-parteċipant iwieġeb tajjeb, t-Teorija tal-Moħħ tkun ġiet żviluppata għaliex jista’ jifhem il-perspetiva ta’ Sally. Biss jekk il-parteċipant iwieġeb ħażin, billi jgħid li Sally ħa tfittex il-ballun fil-kaxxa, it-Teorija tal-Moħħ tkun għadha ma żviluppatx.
+F’dan il-kas, il-parteċipant juri li hu ma jistax jifhem li l-perspetiva ta’ Sally tista’ tkun differenti minn tiegħu.
+
+80% tat-tfal awtistiċi jwieġbu din il-mistoqsija ħażina.
+14% tat-tfal li għandhom id-Down’s Syndrome ukoll iwieġbu din il-mistoqsija ħażina.
+F’kas ta’ tfal li jkunu għadhom qed jiżviluppaw, tfal ta’ taħt is-sitt snin wkoll iwieġbu din il-mistoqsija ħażina.
+Dan għaliex it-Teorija tal-Moħħ tieħu l-ħin biex tiżviluppa.
+Filfatt, tfal ta’ bejn is-sitt u s-seba’ snin jwieġbu tajjeb.
+Hemm ukoll evidenza li l-iżvilupp tat-Teorija tal-Moħħ għandhu ħafna x’jaqsam mal-iżvilupp tal-lingwa.
+Minħabba f’hekk, ġie propost li n-nuqqas tat-Teorija tal-Moħħ jista’ jispjega ftit mill-problemi soċjali u kommunikativi li jesperjenzaw nies b’problem tal-iżvilupp bħal dawk awtistiċi (Tager-Flusberg, 2007 and Frith & Frith, 2003).

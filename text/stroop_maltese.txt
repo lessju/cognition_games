@@ -1,5 +1,28 @@
 [instructions]
-Struzzjonijiet bil-Malti.
+L-għan tal-lobgħa
+
+Waqt din il-logħba se tara xi kliem ikkuluriti. Fl-ewwel parti l-kliem u l-kuluri se jkunu jaqblu. Fit-tieni parti mhux se jkunu jaqblu. L-għan ta' din il-logħba huwa li tgħid il-kulur tal-kliem li jiġu jidhru fuq l-iskrin. Importanti li ma taqrax il-kelma, iżda tgħid il-kulur tagħha. 
+Pereżempju; jekk fuq l-iskrin hemm il-kelma AĦMAR, inti ser tgħid il-kulur tagħha li huwa 'blu' u mhux taqra l-kelma. 
+
+L-istruzjonijiet
+
+1. Għid il-kulur ta' kull kelma, malajr kemm jista' jkun, hekk kif din tiġi tidher fuq l-iskrin.
+2. X'ħin tispiċċa, agħfas il-buttuna, 'LEST'. 
+
+L-ammont ta' ħin li tkun ħadt sabiex tgħid il-kulur, jiġi mnieżel fuq l-iskrin.
+
+Tajjeb li tkun taf li hemm verżjonijiet kemm bl-Ingliż kif ukoll bil-Malti.
 
 [explanation]
-Spjegazzjoni bil-Malti.
+Il-famuż fenominu 'Stroop Effect' ġab ismu wara J. Ridley Stroop, li skopra dan fl-1930. Fl-istudju tiegħu, Stroop, ikkumpara kemm jittieħed ħin biex jingħadu l-ismijiet tal-kuluri ta' lista ta' kaxex ikkuluriti ma' kemm jittieħed ħin biex jingħadu l-ismijiet tal-kuluri ta' kliem ikkulurit b'inka differenti. Il-parteċipanti ta' dan l-istudju damu 74% aktar biex jgħidu l-kulur tal-kliem li kien ikkulurit b'kulur ta' inka differenti.
+
+Filfatt il-kliem iħallu influwenza akbar mill-abilta' li tgħid il-kuluri. Għalhekk huwa aktar diffiċli biex tgħid il-kulur milli biex taqra il-kelma. Din l-interferenza tikkawża problemi.
+
+Studjużi ħarġu b'ħafna teoriji biex jispjegaw dan il-fenominu. Dawn huma ftit minnhom;
+
+'Speed of Processing Theory': l-interferenza hija kkawżata għaliex biex taqra l-kliem tieħu anqas ħin milli biex tgħid il-kuluri. Għalhekk il-proċċes tal-kliem iseħħ aktar mgħaġġel mill-proċċes tal-kuluri.
+
+'Automaticity Model': Minħabba l-fatt li l-iStroop Effect ġie studjat u analiżat kemm-il darba, nistgħu ngħidu li huwa robust għaliex dan il-fenominu jista' jiġi estendit għall-kliem relatati ma' kulur (eż. nar u sema), kif ukoll għall-kliem ivvintat li jinstema' bħal xi kulur (eż. ‘bloo' u ‘ħadar'). B'din l-iskoperta, l-istudjużi jemmnu li l-abilta' tal-bniedem biex jaqra hija awtomatika. Għalhekk il-bniedem m'għandux għalfejn jagħmel ħafna sforz biex jaqra. Bil-kuntrarju, l-abilta' li tgħid l-ismijiet tal-kuluri mhiex awtomatika u tirrikjeda aktar sforz milli biex taqra.
+
+'Parallel Distributed Processing Model': Minħabba l-bioloġija tagħna, kompiti (l-abiltajiet) differenti fil-moħħ (eż. il-qari u s-smiegħ) joħolqu mogħdijiet differenti b'qawwiet differenti. Aktar ma' l-mogħdija tkun b'saħħitha, aktar faċli biex l-abilta' tal-moħħ tkun awtomatika. Mela jekk żewġ mogħdijiet jiġu attivi fl-istess waqt u l-mogħdija li twassal għar-rispons tkun aktar b'saħħita (eż. il-kompetu tal-qari) ma jkunx hemm intereferenza bejn l-abiltajiet. Imma jekk iż-żewġ mogħdijiet li jkunu attivi fl-istess waqt u l-mogħdija li twassal għar-rispons tkun aktar dgħajfa (eż. tgħid il-kuluri) hemm tinħoloq interferenza.
+
