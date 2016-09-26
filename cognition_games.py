@@ -361,14 +361,14 @@ class CognitionGames(gui.QMainWindow):
         if self._sally_anne_page_index == 0:
             if self._maltese:
                 self._main_widget.sally_anne_play_again_button.setText(u"Erga Ilgħab")
-                self._main_widget.sally_anne_change_game_button.setText("Change game")
+                self._main_widget.sally_anne_change_game_button.setText(u"Biddel il-Logħoba")
                 self._main_widget.sally_anne_explanation_label.setText(
                     unicode(self._sally_anne_maltese_text["explanation"]))
             else:
                 self._main_widget.sally_anne_play_again_button.setText("Play Again")
                 self._main_widget.sally_anne_explanation_label.setText(
                     unicode(self._sally_anne_english_text["explanation"]))
-                self._main_widget.sally_anne_change_game_button.setText(u"Biddel il-Logħoba")
+                self._main_widget.sally_anne_change_game_button.setText("Change Game")
             self._sally_anne_page_index = 1
         else:
             self._main_widget.sally_anne_stacked_widget.setCurrentIndex(0)
